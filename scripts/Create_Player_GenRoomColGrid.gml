@@ -20,6 +20,7 @@ for (tileRealX=0; tileRealX <= room_width; tileRealX += 32;)
         if (tile_exists(tileIndex))
         {
         tileColliderID = tile_get_background(tileIndex);
+        instance_create(tileRealX, tileRealY, obj_testmarker);
         }
         else
         {

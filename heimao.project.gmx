@@ -180,6 +180,7 @@
       <object>objects\obj_player</object>
     </objects>
     <object>objects\obj_first_particle</object>
+    <object>objects\obj_testmarker</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testroom</room>
