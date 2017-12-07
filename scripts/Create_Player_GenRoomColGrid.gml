@@ -8,17 +8,18 @@ gridWidth = room_width div 32;
 gridHeight = room_height div 32;
 tileTotal = gridWidth * gridHeight;
 tileMax = tileTotal - 1;
+tileColliderID = 30;
 
 colGrid = ds_grid_create(gridWidth, gridHeight);
 
-for (tileRealX=16; tileRealX <= room_width; tileRealX += 32;)
+for (tileRealX=0; tileRealX <= room_width; tileRealX += 32;)
 {
-    for (tileRealY=16; tileRealY <= room_height; tileRealY += 32;)
+    for (tileRealY=0; tileRealY <= room_height; tileRealY += 32;)
     {
         tileIndex = tile_layer_find(-666, tileRealX, tileRealY);
         if (tile_exists(tileIndex))
         {
-        tileColliderID = tile_get_background(tileIndex) - 3;
+        tileColliderID = tile_get_background(tileIndex);
         }
         else
         {
@@ -26,8 +27,8 @@ for (tileRealX=16; tileRealX <= room_width; tileRealX += 32;)
         }
         //0: square, 1: LD, 2: RD, 3: RU, 4: LU
 
-        tileGridX = tileRealX mod gridWidth;
-        tileGridY = tileRealY mod gridHeight;
+        tileGridX = tileRealX div gridWidth;
+        tileGridY = tileRealY div gridHeight;
 
     ds_grid_add(colGrid, tileGridX, tileGridY, tileColliderID);
     }

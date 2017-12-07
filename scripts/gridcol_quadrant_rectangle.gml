@@ -11,11 +11,12 @@ var ty = yy mod 32;
 var col=false;
 
 switch (obj_player.colGrid[# xx div 32, yy div 32]){
-    case 0: col = false;                                                 break;  // square
+    //case -1: col = false;                                               break;
+    //case 0: col = true;                                                 break;  // square
     case 1: col =  ( (tx >= ty)   ||  (tx >= ay)    ||  (ax >= ty)  );  break;  // 4 Slopes - MAGIC =D see pictures in tutorial for explanation
     case 2: col =  ( (31-tx <= ty)||  (31-tx <= ay) ||  (31-ax <= ty)); break;
     case 3: col =  ( (31-tx >= ty)||  (31-tx >= ay) ||  (31-ax >= ty)); break; 
     case 4: col =  ( (tx <= ty)   ||  (tx <= ay)    ||  (ax <= ty)  );  break;
-    case 69:col = true;                                                break;
+    case 69:col = false;                                                break;
 }
 return col;

@@ -34,11 +34,11 @@
     <background visible="-1" foreground="0" name="background1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="0" name="col_square" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="0" name="col_LD" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="0" name="col_RD" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="0" name="col_RU" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="0" name="col_LU" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
     <view visible="-1" objName="obj_camera" xview="0" yview="0" wview="320" hview="240" xport="0" yport="0" wport="640" hport="480" hborder="160" vborder="120" hspeed="-1" vspeed="-1"/>
@@ -73,6 +73,10 @@
     <tile bgName="col_square" x="384" y="288" w="32" h="32" xo="0" yo="0" id="10000038" name="inst_785B99DD" depth="-666" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="col_LU" x="416" y="288" w="32" h="32" xo="0" yo="0" id="10000039" name="inst_D1E2D5C2" depth="-666" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="col_RU" x="352" y="288" w="32" h="32" xo="0" yo="0" id="10000040" name="inst_0EF1709A" depth="-666" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="col_square" x="992" y="736" w="32" h="32" xo="0" yo="0" id="10000041" name="inst_CA476010" depth="-666" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="col_square" x="992" y="0" w="32" h="32" xo="0" yo="0" id="10000042" name="inst_74690B60" depth="-666" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="col_square" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10000043" name="inst_8957CD3D" depth="-666" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="col_square" x="0" y="736" w="32" h="32" xo="0" yo="0" id="10000044" name="inst_B03EEE94" depth="-666" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
