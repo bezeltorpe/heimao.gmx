@@ -1,5 +1,5 @@
 //Player Controller
-
+//
 var xDir, yDir;
 var xPosPlayer, yPosPlayer;
 var xPlayerNext, yPlayerNext;

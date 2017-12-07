@@ -289,7 +289,7 @@ else {runInput = false;}
     
 /// Movement and Collision
 if (runInput &amp;&amp; canMove)
-    {gridcol_move_speeds(vx,vy)}
+    {gridcol_move_speeds(vx,vy);}
     
 //change facingDir
 //D = 0, add counterclockwise
