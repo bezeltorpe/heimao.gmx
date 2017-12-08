@@ -162,7 +162,6 @@
   <objects name="objects">
     <objects name="persistent">
       <object>objects\obj_camera</object>
-      <object>objects\obj_player_fx</object>
       <object>objects\obj_player</object>
     </objects>
     <objects name="devobj">

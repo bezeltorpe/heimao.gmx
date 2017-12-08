@@ -11,49 +11,41 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>//Player Initialization
-
-///Variables for Movement
-mspd = 1.5; // maximum movement speed
-
-timer = 0;
-playerState = 0;
-canMove = true;
-facingDir = 0;
-runInput = false;
-image_speed = 0.15;
-vx = 0;
-vy = 0;
-xPosPlayer = obj_player.sprite_xoffset;
-yPosPlayer = obj_player.sprite_yoffset;
-
-xExcess = 0;
-yExcess = 0;
-
-sitTimer = 0;
-sitResult = 0;
-layRelease = false;
-
-whichFoot = true;
-drawFootprint = false;
-drawSnowAngel = false;
-
-drawCatShadow = true;
-</string>
+            <kind>9</kind>
+            <script>scr_Create_Player_Ini</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -101,86 +93,41 @@ drawCatShadow = true;
     <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>//Player Pixel Grid Snap
-if (playerState != 3)
-{
-view_xview = floor(view_xview);
-view_yview = floor(view_yview);
-move_snap(1,1);
-}
-
-var v;
-xExcess += vx;
-v = round(xExcess);
-xExcess -= v;
- 
-if (v != 0){
-    s = sign(v);
-    repeat (abs(v)){
-        var down;
-        down = true;
-       
-        if (place_free(x + s, y + 1) &amp;&amp; !place_free(x + s, y + 2) &amp;&amp; down){
-            x += s;
-            y += 1;
-        }
-        else if (place_free(x + s, y)) {
-            x += s;
-        }
-        else if (place_free(x + s, y - 1)){
-            x += s;
-            y -= 1;
-        }
-        else{
-            vx = 0;
-            break;
-        }
-    }
-}
-
-var v;
-yExcess += vy;
-v = round(yExcess);
-yExcess -= v;
- 
-if (v != 0){
-    s = sign(v);
-    repeat (abs(v)){
-        var down;
-        down = true;
-       
-        if (place_free(x + 1, y + s) &amp;&amp; !place_free(x + s, y + 2) &amp;&amp; down){
-            x += 1;
-            y += s;
-        }
-        else if (place_free(x, y + s)) {
-            y += s;
-        }
-        else if (place_free(x - 1, y + s)){
-            x -= 1;
-            y += s;
-        }
-        else{
-            vy = 0;
-            break;
-        }
-    }
-}
-</string>
+            <kind>9</kind>
+            <script>scr_EndStep_Player_SnapAndCollision</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -188,330 +135,41 @@ if (v != 0){
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>//Player Controller
-
-xDir = keyboard_check(ord('D')) - keyboard_check(ord('A'));
-yDir = keyboard_check(ord('S')) - keyboard_check(ord('W'));
-xPosPlayer = obj_player.sprite_xoffset;
-yPosPlayer = obj_player.sprite_yoffset;
-
-timer += 1;
-
-//check for not running
-if (playerState = 3 &amp;&amp; !runInput)
-    {
-    playerState = 0;
-    whichFoot = !whichFoot;
-    vx = 0;
-    vy = 0;
-    }
-
-//laydown input logic
-sitPress = keyboard_check_pressed(ord('Q'));
-sitHeld = keyboard_check(ord('Q'));
-sitRelease = keyboard_check_released(ord('Q'));
-
-if(sitPress)
-    {
-    sitTimer = 0.1;
-    sitResult = 1;
-    }
-
-if(sitHeld)
-    {sitTimer += 0.1;}
-    
-if(sitTimer &gt; 0.5 &amp;&amp; sitResult == 1 &amp;&amp; playerState == 5)
-    {sitResult = 2;}
-    
-if(sitRelease)
-    {
-        sitResult = 0;
-        sitTimer = 0;
-        if (playerState == 7)
-            {layRelease = !layRelease}
-    }
-    
-//sit and lay handling
-if (sitResult == 1)
-    {
-    if (playerState == 0)
-        {
-        playerState = 4;
-        canMove = false;
-        }
-        
-    if (playerState == 5)
-        {playerState = 12}
-        
-    if (playerState == 7 || playerState == 9)
-        {playerState = 11}
-    }
-    
-if (sitResult == 2)
-    {
-    if (playerState == 5)
-        {playerState = 6}
-        
-    if (layRelease)
-        {
-        //if (playerState == 7 || playerState == 9)
-        //    {playerState = 13}
-        layRelease = !layRelease;
-        }
-    }
-    
-//snow angel!
-if (playerState == 7 || playerState == 9)
-    {
-    if (keyboard_check(ord('W')) || keyboard_check(ord('A')) || keyboard_check(ord('S')) || keyboard_check(ord('D')))
-        {
-        if (playerState == 7)
-            {
-            playerState = 8;
-            //drawSnowAngel = true;
-            }
-        if (playerState == 9)
-            {
-            playerState = 10
-            //drawSnowAngel = true;
-            }
-        }
-    }
-
-//supposed to be item usage/interact here, but i made it a stupid thing at like 4 am so now it's commented out
-/*if (keyboard_check_pressed(ord('E')))
-    {
-    image_speed = 0;
-    }*/
-
-//u runnin?
-if ((xDir != 0 || yDir != 0) &amp;&amp; canMove) {runInput = true; playerState = 2;}
-else {runInput = false;}
-    
-//movement calc
-if (runInput &amp;&amp; canMove)
-    {
-    playerState = 3;
-    if (xDir != 0 &amp;&amp; yDir != 0)
-        {
-        vx = ((xDir  / sqrt(2)) * mspd);
-        vy = ((yDir  / sqrt(2)) * mspd);
-        }
-    else
-        {
-        vx = (xDir * mspd);
-        vy = (yDir * mspd);
-        }
-/*    if place_free(vx, vy)
-        {
-        x = vx;
-        y = vy;
-        }*/
-    }
-    
-//change facingDir
-//D = 0, add counterclockwise
-//note to self: change to comparators for controller support
-if (canMove)
-    {
-    if (xDir == 0 &amp;&amp; yDir == 1) {facingDir = 0}
-    if (xDir == 1 &amp;&amp; yDir == 1) {facingDir = 1}
-    if (xDir == 1 &amp;&amp; yDir == 0) {facingDir = 2}
-    if (xDir == 1 &amp;&amp; yDir == -1) {facingDir = 3}
-    if (xDir == 0 &amp;&amp; yDir == -1) {facingDir = 4}
-    if (xDir == -1 &amp;&amp; yDir == -1) {facingDir = 5}
-    if (xDir == -1 &amp;&amp; yDir == 0) {facingDir = 6}
-    if (xDir == -1 &amp;&amp; yDir == 1) {facingDir = 7}
-    }   
-
-//state manager
-switch (playerState)
-   {
-//stand
-   case 0:
-        if (facingDir = 0) {sprite_index = spr_heimao_D}
-        if (facingDir = 1) {sprite_index = spr_heimao_RD}
-        if (facingDir = 2) {sprite_index = spr_heimao_R}
-        if (facingDir = 3) {sprite_index = spr_heimao_RU}
-        if (facingDir = 4) {sprite_index = spr_heimao_U}
-        if (facingDir = 5) {sprite_index = spr_heimao_LU}
-        if (facingDir = 6) {sprite_index = spr_heimao_L}
-        if (facingDir = 7) {sprite_index = spr_heimao_LD}
-        drawCatShadow = true;
-        break;
-        
-//run
-   case 3:
-        if (whichFoot == true)
-            {
-            if (facingDir = 0) {sprite_index = spr_heimao_run_D1}
-            if (facingDir = 1) {sprite_index = spr_heimao_run_RD1}
-            if (facingDir = 2) {sprite_index = spr_heimao_run_R1}
-            if (facingDir = 3) {sprite_index = spr_heimao_run_RU1}
-            if (facingDir = 4) {sprite_index = spr_heimao_run_U1}
-            if (facingDir = 5) {sprite_index = spr_heimao_run_LU1}
-            if (facingDir = 6) {sprite_index = spr_heimao_run_L1}
-            if (facingDir = 7) {sprite_index = spr_heimao_run_LD1}
-            }
-        if (whichFoot == false)
-            {
-            if (facingDir = 0) {sprite_index = spr_heimao_run_D2}
-            if (facingDir = 1) {sprite_index = spr_heimao_run_RD2}
-            if (facingDir = 2) {sprite_index = spr_heimao_run_R2}
-            if (facingDir = 3) {sprite_index = spr_heimao_run_RU2}
-            if (facingDir = 4) {sprite_index = spr_heimao_run_U2}
-            if (facingDir = 5) {sprite_index = spr_heimao_run_LU2}
-            if (facingDir = 6) {sprite_index = spr_heimao_run_L2}
-            if (facingDir = 7) {sprite_index = spr_heimao_run_LD2}
-            }
-        drawCatShadow = true;
-        break;
-        
-//sitdown
-   case 4:
-        if (facingDir = 0) {sprite_index = spr_heimao_sitdown_D}
-        if (facingDir = 1) {sprite_index = spr_heimao_sitdown_RD}
-        if (facingDir = 2) {sprite_index = spr_heimao_sitdown_R}
-        if (facingDir = 3) {sprite_index = spr_heimao_sitdown_RU}
-        if (facingDir = 4) {sprite_index = spr_heimao_sitdown_U}
-        if (facingDir = 5) {sprite_index = spr_heimao_sitdown_LU}
-        if (facingDir = 6) {sprite_index = spr_heimao_sitdown_L}
-        if (facingDir = 7) {sprite_index = spr_heimao_sitdown_LD};
-        drawCatShadow = true;
-        break;
-        
-//sitting
-   case 5:
-        if (facingDir = 0) {sprite_index = spr_heimao_sitting_D}
-        if (facingDir = 1) {sprite_index = spr_heimao_sitting_RD}
-        if (facingDir = 2) {sprite_index = spr_heimao_sitting_R}
-        if (facingDir = 3) {sprite_index = spr_heimao_sitting_RU}
-        if (facingDir = 4) {sprite_index = spr_heimao_sitting_U}
-        if (facingDir = 5) {sprite_index = spr_heimao_sitting_LU}
-        if (facingDir = 6) {sprite_index = spr_heimao_sitting_L}
-        if (facingDir = 7) {sprite_index = spr_heimao_sitting_LD};
-        drawCatShadow = true;
-        break;
-        
-//laydown
-    case 6:
-        if (facingDir = 0) {sprite_index = spr_heimao_laydown_LD}
-        if (facingDir = 1) {sprite_index = spr_heimao_laydown_RD}
-        if (facingDir = 2) {sprite_index = spr_heimao_laydown_RD}
-        if (facingDir = 3) {sprite_index = spr_heimao_laydown_RU}
-        if (facingDir = 4) {sprite_index = spr_heimao_laydown_RU}
-        if (facingDir = 5) {sprite_index = spr_heimao_laydown_LU}
-        if (facingDir = 6) {sprite_index = spr_heimao_laydown_LU}
-        if (facingDir = 7) {sprite_index = spr_heimao_laydown_LD};
-        drawCatShadow = true;
-        break;
-        
-//laying
-    case 7:
-        if (facingDir = 0) {sprite_index = spr_heimao_laying_LD}
-        if (facingDir = 1) {sprite_index = spr_heimao_laying_RD}
-        if (facingDir = 2) {sprite_index = spr_heimao_laying_RD}
-        if (facingDir = 3) {sprite_index = spr_heimao_laying_RU}
-        if (facingDir = 4) {sprite_index = spr_heimao_laying_RU}
-        if (facingDir = 5) {sprite_index = spr_heimao_laying_LU}
-        if (facingDir = 6) {sprite_index = spr_heimao_laying_LU}
-        if (facingDir = 7) {sprite_index = spr_heimao_laying_LD};
-        drawCatShadow = false;
-        break;
-        
-//angelup
-    case 8:
-        if (facingDir = 0) {sprite_index = spr_heimao_angelup_LD}
-        if (facingDir = 1) {sprite_index = spr_heimao_angelup_RD}
-        if (facingDir = 2) {sprite_index = spr_heimao_angelup_RD}
-        if (facingDir = 3) {sprite_index = spr_heimao_angelup_RU}
-        if (facingDir = 4) {sprite_index = spr_heimao_angelup_RU}
-        if (facingDir = 5) {sprite_index = spr_heimao_angelup_LU}
-        if (facingDir = 6) {sprite_index = spr_heimao_angelup_LU}
-        if (facingDir = 7) {sprite_index = spr_heimao_angelup_LD};
-        drawCatShadow = false;
-        break;
-        
-//laying2
-    case 9:
-        if (facingDir = 0) {sprite_index = spr_heimao_laying2_LD}
-        if (facingDir = 1) {sprite_index = spr_heimao_laying2_RD}
-        if (facingDir = 2) {sprite_index = spr_heimao_laying2_RD}
-        if (facingDir = 3) {sprite_index = spr_heimao_laying2_RU}
-        if (facingDir = 4) {sprite_index = spr_heimao_laying2_RU}
-        if (facingDir = 5) {sprite_index = spr_heimao_laying2_LU}
-        if (facingDir = 6) {sprite_index = spr_heimao_laying2_LU}
-        if (facingDir = 7) {sprite_index = spr_heimao_laying2_LD};
-        drawCatShadow = false;
-        break;
-        
-//angeldown
-    case 10:
-        if (facingDir = 0) {sprite_index = spr_heimao_angeldown_LD}
-        if (facingDir = 1) {sprite_index = spr_heimao_angeldown_RD}
-        if (facingDir = 2) {sprite_index = spr_heimao_angeldown_RD}
-        if (facingDir = 3) {sprite_index = spr_heimao_angeldown_RU}
-        if (facingDir = 4) {sprite_index = spr_heimao_angeldown_RU}
-        if (facingDir = 5) {sprite_index = spr_heimao_angeldown_LU}
-        if (facingDir = 6) {sprite_index = spr_heimao_angeldown_LU}
-        if (facingDir = 7) {sprite_index = spr_heimao_angeldown_LD};
-        drawCatShadow = false;
-        break;
-        
-//situp
-    case 11:
-        if (facingDir = 0) {sprite_index = spr_heimao_situp_LD}
-        if (facingDir = 1) {sprite_index = spr_heimao_situp_RD}
-        if (facingDir = 2) {sprite_index = spr_heimao_situp_RD}
-        if (facingDir = 3) {sprite_index = spr_heimao_situp_RU}
-        if (facingDir = 4) {sprite_index = spr_heimao_situp_RU}
-        if (facingDir = 5) {sprite_index = spr_heimao_situp_LU}
-        if (facingDir = 6) {sprite_index = spr_heimao_situp_LU}
-        if (facingDir = 7) {sprite_index = spr_heimao_situp_LD};
-        drawCatShadow = true;
-        break;
-        
-//standup
-   case 12:
-        if (facingDir = 0) {sprite_index = spr_heimao_standup_D}
-        if (facingDir = 1) {sprite_index = spr_heimao_standup_RD}
-        if (facingDir = 2) {sprite_index = spr_heimao_standup_R}
-        if (facingDir = 3) {sprite_index = spr_heimao_standup_RU}
-        if (facingDir = 4) {sprite_index = spr_heimao_standup_U}
-        if (facingDir = 5) {sprite_index = spr_heimao_standup_LU}
-        if (facingDir = 6) {sprite_index = spr_heimao_standup_L}
-        if (facingDir = 7) {sprite_index = spr_heimao_standup_LD};
-        drawCatShadow = true;
-        break;
-
-//laying to standup
-   case 13:
-        if (facingDir = 0) {sprite_index = spr_heimao_standup_D}
-        if (facingDir = 1) {sprite_index = spr_heimao_standup_RD}
-        if (facingDir = 2) {sprite_index = spr_heimao_standup_R}
-        if (facingDir = 3) {sprite_index = spr_heimao_standup_RU}
-        if (facingDir = 4) {sprite_index = spr_heimao_standup_U}
-        if (facingDir = 5) {sprite_index = spr_heimao_standup_LU}
-        if (facingDir = 6) {sprite_index = spr_heimao_standup_L}
-        if (facingDir = 7) {sprite_index = spr_heimao_standup_LD};
-        drawCatShadow = true;
-        break;
-   }
-</string>
+            <kind>9</kind>
+            <script>scr_Step_Player_Controller</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -519,62 +177,41 @@ switch (playerState)
     <event eventtype="7" enumb="7">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>//Player State Manager Chain... Response? Thing?
-
-if (playerState == 3)
-    {
-    whichFoot = !whichFoot; 
-    drawFootprint = true;
-    }
-
-if (playerState == 4)
-    {
-    playerState = 5;
-    }
-
-if (playerState == 6)
-    {
-    playerState = 7;
-    drawSnowAngel = true;
-    }
-
-if (playerState == 8)
-    {
-    playerState = 9;
-    drawSnowAngel = true;
-    }
-
-if (playerState = 10)
-    {
-    playerState = 7;
-    drawSnowAngel = false;
-    }
-
-if (playerState = 11)
-    {
-    playerState = 5;
-    }
-
-if (playerState == 12 || playerState == 13)
-    {
-    playerState = 0;
-    canMove = true;
-    }
-</string>
+            <kind>9</kind>
+            <script>scr_AnimEnd_Player_StateMngResponse</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
