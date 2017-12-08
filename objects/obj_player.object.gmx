@@ -38,10 +38,13 @@ canMove = true;
 facingDir = 0;
 runInput = false;
 image_speed = 0.15;
-xPlayerNext = obj_player.x;
-yPlayerNext = obj_player.y;
+vx = 0;
+vy = 0;
 xPosPlayer = obj_player.sprite_xoffset;
 yPosPlayer = obj_player.sprite_yoffset;
+
+xExcess = 0;
+yExcess = 0;
 
 sitTimer = 0;
 sitResult = 0;
@@ -121,6 +124,64 @@ view_xview = floor(view_xview);
 view_yview = floor(view_yview);
 move_snap(1,1);
 }
+
+var v;
+xExcess += vx;
+v = round(xExcess);
+xExcess -= v;
+ 
+if (v != 0){
+    s = sign(v);
+    repeat (abs(v)){
+        var down;
+        down = true;
+       
+        if (place_free(x + s, y + 1) &amp;&amp; !place_free(x + s, y + 2) &amp;&amp; down){
+            x += s;
+            y += 1;
+        }
+        else if (place_free(x + s, y)) {
+            x += s;
+        }
+        else if (place_free(x + s, y - 1)){
+            x += s;
+            y -= 1;
+        }
+        else{
+            vx = 0;
+            break;
+        }
+    }
+}
+
+var v;
+yExcess += vy;
+v = round(yExcess);
+yExcess -= v;
+ 
+if (v != 0){
+    s = sign(v);
+    repeat (abs(v)){
+        var down;
+        down = true;
+       
+        if (place_free(x + 1, y + s) &amp;&amp; !place_free(x + s, y + 2) &amp;&amp; down){
+            x += 1;
+            y += s;
+        }
+        else if (place_free(x, y + s)) {
+            y += s;
+        }
+        else if (place_free(x - 1, y + s)){
+            x -= 1;
+            y += s;
+        }
+        else{
+            vy = 0;
+            break;
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -157,6 +218,8 @@ if (playerState = 3 &amp;&amp; !runInput)
     {
     playerState = 0;
     whichFoot = !whichFoot;
+    vx = 0;
+    vy = 0;
     }
 
 //laydown input logic
@@ -247,19 +310,19 @@ if (runInput &amp;&amp; canMove)
     playerState = 3;
     if (xDir != 0 &amp;&amp; yDir != 0)
         {
-        xPlayerNext += ((xDir  / sqrt(2)) * mspd);
-        yPlayerNext += ((yDir  / sqrt(2)) * mspd);
+        vx = ((xDir  / sqrt(2)) * mspd);
+        vy = ((yDir  / sqrt(2)) * mspd);
         }
     else
         {
-        xPlayerNext += (xDir * mspd);
-        yPlayerNext += (yDir * mspd);
+        vx = (xDir * mspd);
+        vy = (yDir * mspd);
         }
-    if place_free(xPlayerNext, yPlayerNext)
+/*    if place_free(vx, vy)
         {
-        x = xPlayerNext;
-        y = yPlayerNext;
-        }
+        x = vx;
+        y = vy;
+        }*/
     }
     
 //change facingDir
