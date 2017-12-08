@@ -27,8 +27,6 @@
             <kind>1</kind>
             <string>//Player Initialization
 
-collisionDetected = false;
-
 ///Variables for Movement
 mspd = 1.5; // maximum movement speed
 

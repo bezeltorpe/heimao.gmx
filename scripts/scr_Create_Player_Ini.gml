@@ -1,25 +1,28 @@
 //Player Initialization
-var timer, playerState, canMove, facingDir, runInput, xPlayerNext, yPlayerNext;
-var sitTimer, sitResult, layRelease;
-var whichFoot, drawFootprint;
-var drawCatShadow;
-var drawSnowAngel;
 
-global.timer = 0;
-global.playerState = 0;
-global.canMove = true;
-global.facingDir = 0;
-global.runInput = false;
+///Variables for Movement
+mspd = 1.5; // maximum movement speed
+
+timer = 0;
+playerState = 0;
+canMove = true;
+facingDir = 0;
+runInput = false;
 image_speed = 0.15;
-global.xPlayerNext = obj_player.x;
-global.yPlayerNext = obj_player.y;
+vx = 0;
+vy = 0;
+xPosPlayer = obj_player.sprite_xoffset;
+yPosPlayer = obj_player.sprite_yoffset;
 
-global.sitTimer = 0;
-global.sitResult = 0;
-global.layRelease = false;
+xExcess = 0;
+yExcess = 0;
 
-global.whichFoot = true;
-global.drawFootprint = false;
-global.drawSnowAngel = false;
+sitTimer = 0;
+sitResult = 0;
+layRelease = false;
 
-global.drawCatShadow = true;
+whichFoot = true;
+drawFootprint = false;
+drawSnowAngel = false;
+
+drawCatShadow = true;

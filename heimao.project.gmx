@@ -153,7 +153,7 @@
   <scripts name="scripts">
     <script>scripts\scr_Step_Player_Controller.gml</script>
     <script>scripts\scr_Step_Camera_Controller.gml</script>
-    <script>scripts\scr_EndStep_Player_PixelGridSnap.gml</script>
+    <script>scripts\scr_EndStep_Player_SnapAndCollision.gml</script>
     <script>scripts\scr_Create_Player_Ini.gml</script>
     <script>scripts\scr_AnimEnd_Player_StateMngResponse.gml</script>
     <script>scripts\scr_AnimEnd_FX_DrawFootprint.gml</script>

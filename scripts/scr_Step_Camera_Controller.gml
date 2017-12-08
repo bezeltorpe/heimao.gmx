@@ -2,7 +2,7 @@ var centerDistance = distance_to_point(obj_player.x, obj_player.y);
 //Camera Script
 var dirToPlayer = point_direction(x, y, obj_player.x, obj_player.y);
 
-if (playerState = 3)
+if (obj_player.playerState = 3)
     {
     if (centerDistance < 8)
         {

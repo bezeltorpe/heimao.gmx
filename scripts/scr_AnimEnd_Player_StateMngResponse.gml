@@ -1,41 +1,41 @@
 //Player State Manager Chain... Response? Thing?
 
-if (global.playerState == 3)
+if (playerState == 3)
     {
-    global.whichFoot = !global.whichFoot; 
-    global.drawFootprint = true;
+    whichFoot = !whichFoot; 
+    drawFootprint = true;
     }
 
-if (global.playerState == 4)
+if (playerState == 4)
     {
-    global.playerState = 5;
+    playerState = 5;
     }
 
-if (global.playerState == 6)
+if (playerState == 6)
     {
-    global.playerState = 7;
-    global.drawSnowAngel = true;
+    playerState = 7;
+    drawSnowAngel = true;
     }
 
-if (global.playerState == 8)
+if (playerState == 8)
     {
-    global.playerState = 9;
-    global.drawSnowAngel = true;
+    playerState = 9;
+    drawSnowAngel = true;
     }
 
-if (global.playerState = 10)
+if (playerState = 10)
     {
-    global.playerState = 7;
-    global.drawSnowAngel = false;
+    playerState = 7;
+    drawSnowAngel = false;
     }
 
-if (global.playerState = 11)
+if (playerState = 11)
     {
-    global.playerState = 5;
+    playerState = 5;
     }
 
-if (global.playerState == 12 || global.playerState == 13)
+if (playerState == 12 || playerState == 13)
     {
-    global.playerState = 0;
-    global.canMove = true;
+    playerState = 0;
+    canMove = true;
     }
