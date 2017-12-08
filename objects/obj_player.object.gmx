@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -30,11 +30,7 @@
 collisionDetected = false;
 
 ///Variables for Movement
-mspd = 3; // maximum movement speed
-avx = 0;  // actual velocity x - is used for saving uneven number remainder!
-avy = 0;  // actual velocity y
-vx = 0;
-vy = 0;
+mspd = 1.5; // maximum movement speed
 
 timer = 0;
 playerState = 0;
@@ -44,6 +40,8 @@ runInput = false;
 image_speed = 0.15;
 xPlayerNext = obj_player.x;
 yPlayerNext = obj_player.y;
+xPosPlayer = obj_player.sprite_xoffset;
+yPosPlayer = obj_player.sprite_yoffset;
 
 sitTimer = 0;
 sitResult = 0;
@@ -98,46 +96,6 @@ drawCatShadow = true;
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>Create_Player_GenRoomColGrid</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="3" enumb="2">
       <action>
@@ -157,12 +115,12 @@ drawCatShadow = true;
           <argument>
             <kind>1</kind>
             <string>//Player Pixel Grid Snap
-/*if (global.playerState != 3)
+if (playerState != 3)
 {
 view_xview = floor(view_xview);
 view_yview = floor(view_yview);
 move_snap(1,1);
-}*/
+}
 </string>
           </argument>
         </arguments>
@@ -187,14 +145,10 @@ move_snap(1,1);
             <kind>1</kind>
             <string>//Player Controller
 
-//xPosPlayer, yPosPlayer;
-//xPlayerNext, yPlayerNext;
-horizontal = keyboard_check(ord('D')) - keyboard_check(ord('A'));
-vertical = keyboard_check(ord('S')) - keyboard_check(ord('W'));
-vx = horizontal * mspd;
-vy = vertical * mspd;
-//xPosPlayer = obj_player.sprite_xoffset;
-//yPosPlayer = obj_player.sprite_yoffset;
+xDir = keyboard_check(ord('D')) - keyboard_check(ord('A'));
+yDir = keyboard_check(ord('S')) - keyboard_check(ord('W'));
+xPosPlayer = obj_player.sprite_xoffset;
+yPosPlayer = obj_player.sprite_yoffset;
 
 timer += 1;
 
@@ -284,26 +238,43 @@ if (playerState == 7 || playerState == 9)
     }*/
 
 //u runnin?
-if ((vx != 0 || vy != 0) &amp;&amp; canMove) {runInput = true; playerState = 2;}
+if ((xDir != 0 || yDir != 0) &amp;&amp; canMove) {runInput = true; playerState = 2;}
 else {runInput = false;}
     
-/// Movement and Collision
+//movement calc
 if (runInput &amp;&amp; canMove)
-    {gridcol_move_speeds(vx,vy);}
+    {
+    playerState = 3;
+    if (xDir != 0 &amp;&amp; yDir != 0)
+        {
+        xPlayerNext += ((xDir  / sqrt(2)) * mspd);
+        yPlayerNext += ((yDir  / sqrt(2)) * mspd);
+        }
+    else
+        {
+        xPlayerNext += (xDir * mspd);
+        yPlayerNext += (yDir * mspd);
+        }
+    if place_free(xPlayerNext, yPlayerNext)
+        {
+        x = xPlayerNext;
+        y = yPlayerNext;
+        }
+    }
     
 //change facingDir
 //D = 0, add counterclockwise
 //note to self: change to comparators for controller support
 if (canMove)
     {
-    if (vx == 0 &amp;&amp; vy == 1) {facingDir = 0}
-    if (vx == 1 &amp;&amp; vy == 1) {facingDir = 1}
-    if (vx == 1 &amp;&amp; vy == 0) {facingDir = 2}
-    if (vx == 1 &amp;&amp; vy == -1) {facingDir = 3}
-    if (vx == 0 &amp;&amp; vy == -1) {facingDir = 4}
-    if (vx == -1 &amp;&amp; vy == -1) {facingDir = 5}
-    if (vx == -1 &amp;&amp; vy == 0) {facingDir = 6}
-    if (vx == -1 &amp;&amp; vy == 1) {facingDir = 7}
+    if (xDir == 0 &amp;&amp; yDir == 1) {facingDir = 0}
+    if (xDir == 1 &amp;&amp; yDir == 1) {facingDir = 1}
+    if (xDir == 1 &amp;&amp; yDir == 0) {facingDir = 2}
+    if (xDir == 1 &amp;&amp; yDir == -1) {facingDir = 3}
+    if (xDir == 0 &amp;&amp; yDir == -1) {facingDir = 4}
+    if (xDir == -1 &amp;&amp; yDir == -1) {facingDir = 5}
+    if (xDir == -1 &amp;&amp; yDir == 0) {facingDir = 6}
+    if (xDir == -1 &amp;&amp; yDir == 1) {facingDir = 7}
     }   
 
 //state manager
@@ -587,32 +558,6 @@ if (playerState == 12 || playerState == 13)
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_set_color(c_blue);
-draw_text(obj_player.x, obj_player.y, "VX" + string(vx) + " VY" + string(vy));
-draw_text(obj_player.x + 10, obj_player.y + 10, "AVX" + string(avx) + " AVY" + string(avy));
-draw_text(obj_player.x + 20, obj_player.y + 20, "colliding?" + string(collisionDetected) + " canMove?" + string(canMove));
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -633,6 +578,7 @@ draw_text(obj_player.x + 20, obj_player.y + 20, "colliding?" + string(collisionD
             <string>if (drawCatShadow = true) {draw_sprite(spr_heimao_shadow, 0, x, y)};
 draw_set_alpha(0.5);
 draw_rectangle_colour(bbox_left,bbox_top,bbox_right,bbox_bottom,c_red,c_red,c_red,c_red,false);
+draw_set_alpha(1);
 draw_self();
 </string>
           </argument>

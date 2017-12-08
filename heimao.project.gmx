@@ -144,13 +144,6 @@
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
-    <backgrounds name="Colliders">
-      <background>background\col_square</background>
-      <background>background\col_LD</background>
-      <background>background\col_RD</background>
-      <background>background\col_RU</background>
-      <background>background\col_LU</background>
-    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -161,17 +154,6 @@
     <script>scripts\scr_AnimEnd_Player_StateMngResponse.gml</script>
     <script>scripts\scr_AnimEnd_FX_DrawFootprint.gml</script>
     <script>scripts\scr_Create_FX_FootprintParticleSystem.gml</script>
-    <scripts name="MovementAndCollision">
-      <script>scripts\gridcol_create_player_mvmt.gml</script>
-      <script>scripts\gridcol_step_player_mvmt.gml</script>
-      <script>scripts\gridcol_draw_player_coldebug.gml</script>
-      <script>scripts\gridcol_line.gml</script>
-      <script>scripts\gridcol_move_speeds.gml</script>
-      <script>scripts\gridcol_place_meeting.gml</script>
-      <script>scripts\gridcol_point.gml</script>
-      <script>scripts\gridcol_quadrant_rectangle.gml</script>
-      <script>scripts\Create_Player_GenRoomColGrid.gml</script>
-    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="persistent">
@@ -180,7 +162,6 @@
       <object>objects\obj_player</object>
     </objects>
     <object>objects\obj_first_particle</object>
-    <object>objects\obj_testmarker</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testroom</room>
