@@ -158,11 +158,32 @@
     <script>scripts\scr_AnimEnd_Player_StateMngResponse.gml</script>
     <script>scripts\scr_AnimEnd_FX_DrawFootprint.gml</script>
     <script>scripts\scr_Create_FX_FootprintParticleSystem.gml</script>
+    <scripts name="heimao">
+      <script>scripts\scr_heimao_action.gml</script>
+      <script>scripts\scr_heimao_draw.gml</script>
+      <script>scripts\scr_heimao_camera.gml</script>
+      <script>scripts\scr_heimao_init.gml</script>
+      <script>scripts\scr_heimao_step.gml</script>
+      <script>scripts\scr_heimao_updateState.gml</script>
+      <scripts name="States">
+        <scripts name="Running">
+          <script>scripts\scr_heimao_running_draw.gml</script>
+          <script>scripts\scr_heimao_running_updateState.gml</script>
+          <script>scripts\scr_heimao_running_act.gml</script>
+        </scripts>
+        <scripts name="Standing">
+          <script>scripts\scr_heimao_standing_draw.gml</script>
+          <script>scripts\scr_heimao_standing_updateState.gml</script>
+          <script>scripts\scr_heimao_standing_act.gml</script>
+        </scripts>
+      </scripts>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="persistent">
       <object>objects\obj_camera</object>
       <object>objects\obj_player</object>
+      <object>objects\heimao_object</object>
     </objects>
     <objects name="devobj">
       <object>objects\obj_first_particle</object>
