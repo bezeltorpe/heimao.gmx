@@ -67,7 +67,7 @@
     <instance objName="obj_colSquare" x="656" y="208" name="inst_40149F20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_colSquare" x="688" y="176" name="inst_E19E79D4" locked="0" code="" scaleX="0.75" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_colSquare" x="624" y="208" name="inst_BE59AC40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_colSlope" x="644" y="264" name="inst_0CD25CD7" locked="0" code="" scaleX="0.5" scaleY="-0.800000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colSlope" x="648" y="264" name="inst_0CD25CD7" locked="0" code="" scaleX="-0.75" scaleY="-0.800000011920929" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="overworld01" x="96" y="192" w="64" h="64" xo="0" yo="64" id="10000087" name="inst_D5DC7E6F" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
