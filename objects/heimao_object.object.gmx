@@ -191,7 +191,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_AnimEnd_Player_StateMngResponse</script>
+            <script>scr_heimao_animationEnd</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -231,7 +231,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_AnimEnd_FX_DrawFootprint</script>
+            <script>scr_heimao_animationEnd_footprint</script>
           </argument>
           <argument>
             <kind>0</kind>

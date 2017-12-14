@@ -2,43 +2,52 @@
 
 // Global initial stepping
 
-// Temporary Controls
-xDir = keyboard_check(ord('D')) - keyboard_check(ord('A'));
-yDir = keyboard_check(ord('S')) - keyboard_check(ord('W'));
-timer += 1;
+// Clear movement speed
+vx = 0;
+vy = 0;
 
-//check for not running
-if (playerState = 3 && !runInput)
-    {
-    playerState = 0;
-    whichFoot = !whichFoot;
-    vx = 0;
-    vy = 0;
-    }
+/********************/
+// Temporary Controls
+/********************/
+keyUp = keyboard_check(ord('W'));
+keyDown = keyboard_check(ord('S'));
+keyLeft = keyboard_check(ord('A'));
+keyRight = keyboard_check(ord('D'));
+xDir = keyRight - keyLeft;
+yDir = keyDown - keyUp;
+timer += 1;
 
 //laydown input logic
 sitPress = keyboard_check_pressed(ord('Q'));
 sitHeld = keyboard_check(ord('Q'));
 sitRelease = keyboard_check_released(ord('Q'));
 
+if(sitPress)
+    {
+    sitTimer = 0.1; // TODO handle sitting timer properly with delta
+    sitResult = 1;
+    }
+
+if(sitHeld)
+    {sitTimer += 0.1;}
+    
+if(sitTimer > 0.5 && sitResult == 1)
+    {sitResult = 2;}
+    
+if(sitRelease)
+    {
+        sitResult = 0;
+        sitTimer = 0;
+    }
+
+/********************/ 
+/********************/ 
+
 // Update states accordingly
 scr_heimao_updateState();
 
 // Act
 scr_heimao_action();
-
-// Update direction of the character
-if (canMove)
-{
-    if (xDir == 0 && yDir == 1) {facingDir = 0}
-    if (xDir == 1 && yDir == 1) {facingDir = 1}
-    if (xDir == 1 && yDir == 0) {facingDir = 2}
-    if (xDir == 1 && yDir == -1) {facingDir = 3}
-    if (xDir == 0 && yDir == -1) {facingDir = 4}
-    if (xDir == -1 && yDir == -1) {facingDir = 5}
-    if (xDir == -1 && yDir == 0) {facingDir = 6}
-    if (xDir == -1 && yDir == 1) {facingDir = 7}
-}
 
 // Draw
 scr_heimao_draw();

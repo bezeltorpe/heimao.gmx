@@ -1,3 +1,17 @@
+// Update direction of the character
+if (canMove)
+{
+    if (xDir == 0 && yDir == 1) {facingDir = 0}
+    if (xDir == 1 && yDir == 1) {facingDir = 1}
+    if (xDir == 1 && yDir == 0) {facingDir = 2}
+    if (xDir == 1 && yDir == -1) {facingDir = 3}
+    if (xDir == 0 && yDir == -1) {facingDir = 4}
+    if (xDir == -1 && yDir == -1) {facingDir = 5}
+    if (xDir == -1 && yDir == 0) {facingDir = 6}
+    if (xDir == -1 && yDir == 1) {facingDir = 7}
+}
+
+// Draw correct sprite
 switch(playerState)
 {
     case State.Standing:
@@ -7,7 +21,7 @@ switch(playerState)
     case State.Running:
         scr_heimao_running_draw();
         break;
-/*
+        
     case State.SittingDown:
         scr_heimao_sittingDown_draw();
         break;
@@ -16,8 +30,8 @@ switch(playerState)
         scr_heimao_sitting_draw();
         break;
 
-    case State.Laydown:
-        scr_heimao_laydown_draw();
+    case State.LayingDown:
+        scr_heimao_layingDown_draw();
         break;
 
     case State.Laying:
@@ -36,15 +50,11 @@ switch(playerState)
         scr_heimao_angelDown_draw();
         break;
 
-    case State.SittingUp:
-        scr_heimao_sittingUp_draw();
+    case State.LayingUp:
+        scr_heimao_layingUp_draw();
         break;
-
+        
     case State.StandingUp:
         scr_heimao_standingUp_draw();
         break;
-
-    case State.LayingToStandup:
-        scr_heimao_layingToStandup_draw();
-        break;*/
 }

@@ -9,14 +9,14 @@ enum State
     Running,            // 3
     SittingDown,        // 4
     Sitting,            // 5
-    Laydown,            // 6
+    LayingDown,         // 6
     Laying,             // 7
     Laying2,            // 9
     AngelUp,            // 8
     AngelDown,          // 10
     SittingUp,          // 11
     StandingUp,         // 12
-    LayingToStandup     // 13
+    LayingUp            // 13
 }
 
 playerState = State.Standing;

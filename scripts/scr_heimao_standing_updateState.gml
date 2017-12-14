@@ -1,14 +1,13 @@
 /*
     Transitions to:
         1. Running
-        2. Sitdown
+        2. SittingDown
         3. Interacting - TODO
 */
 
 // Check if running
 if ((xDir != 0 || yDir != 0) && canMove)
 {
-    runInput = true;
     playerState = State.Running;
 }
 

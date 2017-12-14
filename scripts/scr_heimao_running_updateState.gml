@@ -1,18 +1,22 @@
 /*
     Transitions to:
         1. Standing
-        2. Interacting - TODO
+        2. SittingDown
+        3. Interacting - TODO
 */
 
-// Check if running
+// Check if Standing
 if ((xDir == 0 && yDir == 0))
 {
-    runInput = false;
     playerState = State.Standing;
+    whichFoot = !whichFoot;
+    vx = 0;
+    vy = 0;
 }
 
 // Check for sitdown
 if (sitResult == 1)
 {
     playerState = State.SittingDown;
+    canMove = false;
 }
