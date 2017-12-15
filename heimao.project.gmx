@@ -144,10 +144,14 @@
       <sprite>sprites\spr_colSquare</sprite>
       <sprite>sprites\spr_colSlope</sprite>
     </sprites>
+    <sprite>sprites\spr_snowball2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
+    <backgrounds name="tilesets">
+      <background>background\overworld01</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
