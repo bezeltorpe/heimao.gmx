@@ -162,11 +162,74 @@
     <script>scripts\scr_AnimEnd_Player_StateMngResponse.gml</script>
     <script>scripts\scr_AnimEnd_FX_DrawFootprint.gml</script>
     <script>scripts\scr_Create_FX_FootprintParticleSystem.gml</script>
+    <scripts name="heimao">
+      <script>scripts\scr_heimao_camera.gml</script>
+      <script>scripts\scr_heimao_init.gml</script>
+      <script>scripts\scr_heimao_step.gml</script>
+      <script>scripts\scr_heimao_updateState.gml</script>
+      <script>scripts\scr_heimao_draw.gml</script>
+      <script>scripts\scr_heimao_action.gml</script>
+      <script>scripts\scr_heimao_animationEnd.gml</script>
+      <script>scripts\scr_heimao_animationEnd_footprint.gml</script>
+      <scripts name="States">
+        <scripts name="Running">
+          <script>scripts\scr_heimao_running_draw.gml</script>
+          <script>scripts\scr_heimao_running_updateState.gml</script>
+          <script>scripts\scr_heimao_running_act.gml</script>
+        </scripts>
+        <scripts name="Standing">
+          <script>scripts\scr_heimao_standing_draw.gml</script>
+          <script>scripts\scr_heimao_standing_updateState.gml</script>
+          <script>scripts\scr_heimao_standing_act.gml</script>
+        </scripts>
+        <scripts name="SittingDown">
+          <script>scripts\scr_heimao_sittingDown_draw.gml</script>
+          <script>scripts\scr_heimao_sittingDown_updateState.gml</script>
+          <script>scripts\scr_heimao_sittingDown_act.gml</script>
+        </scripts>
+        <scripts name="Sitting">
+          <script>scripts\scr_heimao_sitting_draw.gml</script>
+          <script>scripts\scr_heimao_sitting_updateState.gml</script>
+          <script>scripts\scr_heimao_sitting_act.gml</script>
+        </scripts>
+        <scripts name="LayingDown">
+          <script>scripts\scr_heimao_layingDown_updateState.gml</script>
+          <script>scripts\scr_heimao_layingDown_act.gml</script>
+          <script>scripts\scr_heimao_layingDown_draw.gml</script>
+        </scripts>
+        <scripts name="Laying">
+          <script>scripts\scr_heimao_laying_draw.gml</script>
+          <script>scripts\scr_heimao_laying_act.gml</script>
+          <script>scripts\scr_heimao_laying_updateState.gml</script>
+        </scripts>
+        <scripts name="Laying2">
+          <script>scripts\scr_heimao_laying2_draw.gml</script>
+          <script>scripts\scr_heimao_laying2_updateState.gml</script>
+        </scripts>
+        <scripts name="AngelUp">
+          <script>scripts\scr_heimao_angelUp_draw.gml</script>
+        </scripts>
+        <scripts name="AngelDown">
+          <script>scripts\scr_heimao_angelDown_draw.gml</script>
+        </scripts>
+        <scripts name="StandingUp">
+          <script>scripts\scr_heimao_standingUp_updateState.gml</script>
+          <script>scripts\scr_heimao_standingUp_draw.gml</script>
+          <script>scripts\scr_heimao_standingUp_act.gml</script>
+        </scripts>
+        <scripts name="LayingUp">
+          <script>scripts\scr_heimao_layingUp_draw.gml</script>
+          <script>scripts\scr_heimao_layingUp_act.gml</script>
+          <script>scripts\scr_heimao_layingUp_updateState.gml</script>
+        </scripts>
+      </scripts>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="persistent">
       <object>objects\obj_camera</object>
       <object>objects\obj_player</object>
+      <object>objects\heimao_object</object>
     </objects>
     <objects name="devobj">
       <object>objects\obj_first_particle</object>
