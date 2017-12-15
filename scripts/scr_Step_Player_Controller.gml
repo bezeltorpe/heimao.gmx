@@ -9,12 +9,12 @@ timer += 1;
 
 //check for not running
 if (playerState = 3 && !runInput)
-    {
+{
     playerState = 0;
     whichFoot = !whichFoot;
     vx = 0;
     vy = 0;
-    }
+}
 
 //laydown input logic
 sitPress = keyboard_check_pressed(ord('Q'));
@@ -61,7 +61,7 @@ if (sitResult == 2)
     {
     if (playerState == 5)
         {playerState = 6}
-        
+          
     if (layRelease)
         {
         //if (playerState == 7 || playerState == 9)
