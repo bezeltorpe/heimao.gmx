@@ -228,7 +228,6 @@
   <objects name="objects">
     <objects name="persistent">
       <object>objects\obj_camera</object>
-      <object>objects\obj_player</object>
       <object>objects\heimao_object</object>
     </objects>
     <objects name="devobj">
