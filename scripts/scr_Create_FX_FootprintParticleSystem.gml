@@ -1,5 +1,5 @@
 var printLife;
-printLife = 3;
+printLife = 5;
 FootprintParticleSystem = part_system_create();
 part_system_depth(FootprintParticleSystem, 1);
 part_system_position(FootprintParticleSystem, 0, 0);
