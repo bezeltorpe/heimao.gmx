@@ -145,6 +145,7 @@
       <sprite>sprites\spr_colSlope</sprite>
     </sprites>
     <sprite>sprites\spr_snowball2</sprite>
+    <sprite>sprites\sprite101</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -224,6 +225,7 @@
         </scripts>
       </scripts>
     </scripts>
+    <script>scripts\base_interact.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="persistent">
@@ -234,6 +236,7 @@
       <object>objects\obj_first_particle</object>
       <object>objects\obj_colSquare</object>
       <object>objects\obj_colSlope</object>
+      <object>objects\interactable</object>
     </objects>
   </objects>
   <rooms name="rooms">

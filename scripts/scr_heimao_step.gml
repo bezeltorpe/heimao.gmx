@@ -13,6 +13,7 @@ keyUp = keyboard_check(ord('W'));
 keyDown = keyboard_check(ord('S'));
 keyLeft = keyboard_check(ord('A'));
 keyRight = keyboard_check(ord('D'));
+keyAction = keyboard_check(ord('E'));
 xDir = keyRight - keyLeft;
 yDir = keyDown - keyUp;
 timer += 1;
