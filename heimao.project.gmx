@@ -225,7 +225,10 @@
         </scripts>
       </scripts>
     </scripts>
-    <script>scripts\base_interact.gml</script>
+    <scripts name="common">
+      <script>scripts\base_interact.gml</script>
+      <script>scripts\scr_test_apple_interact.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="persistent">
@@ -237,6 +240,7 @@
       <object>objects\obj_colSquare</object>
       <object>objects\obj_colSlope</object>
       <object>objects\interactable</object>
+      <object>objects\test_apple</object>
     </objects>
   </objects>
   <rooms name="rooms">
