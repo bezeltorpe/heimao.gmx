@@ -11,13 +11,11 @@ if (active)
     var y2 = y1 + 9 * (heightBorder);
     y1 = y1 + heightBorder;
     
-    draw_set_color(c_black);
     draw_set_alpha(0.8);
+    draw_set_color(c_black);
     draw_rectangle(x1,y1,x2,y2,0);
-    draw_set_alpha(1);
     
-    // Draw the items
-    
+    // Draw the items    
     for (var i = 0; i < 2; i++;)
     {
         for (var j = 0; j < 5; j++;)
@@ -28,5 +26,16 @@ if (active)
                 draw_sprite(icons[index], 0, x1 + j * widthBorder + widthBorder, y1 + i * heightBorder + heightBorder);
             }
         }
+    }
+    // Highlight selected item if any item exists
+    if (currentItemCount > 0)
+    {
+        draw_set_color(c_yellow);
+        draw_rectangle(
+            x1 + selectX * widthBorder + widthBorder,
+            y1 + selectY * heightBorder + heightBorder,
+            32 + x1 + selectX * widthBorder + widthBorder,
+            32 + y1 + selectY * heightBorder + heightBorder,
+            1);
     }
 }

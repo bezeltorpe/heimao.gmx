@@ -2,7 +2,8 @@
 active = false;
 maxItemCount = 10;
 
-selected = 0;
+selectX = 0;
+selectY = 0;
 currentItemCount = 0;
 
 for(var i = maxItemCount - 1; i >= 0 i--;)

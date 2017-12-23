@@ -235,6 +235,7 @@
       <script>scripts\scr_inventory_draw.gml</script>
       <script>scripts\scr_inventory_add.gml</script>
       <script>scripts\scr_inventory_init.gml</script>
+      <script>scripts\scr_inventory_step.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">

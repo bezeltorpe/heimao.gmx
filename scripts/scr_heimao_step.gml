@@ -42,14 +42,21 @@ if(sitRelease)
 
 (inventory).active = keyInventory;
 
+// Check if heimao should be interrupted
+// Add on here to stop updating 
+shouldBeInterrupted = (inventory).active;
+
 /********************/ 
 /********************/ 
 
-// Update states accordingly
-scr_heimao_updateState();
-
-// Act
-scr_heimao_action();
-
-// Draw
-scr_heimao_draw();
+if (!shouldBeInterrupted)
+{
+    // Update states accordingly
+    scr_heimao_updateState();
+    
+    // Act
+    scr_heimao_action();
+    
+    // Draw
+    scr_heimao_draw();
+}
