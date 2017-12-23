@@ -145,6 +145,8 @@
       <sprite>sprites\spr_colSlope</sprite>
     </sprites>
     <sprite>sprites\spr_snowball2</sprite>
+    <sprite>sprites\spr_testrotate</sprite>
+    <sprite>sprites\spr_testitem</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -224,16 +226,30 @@
         </scripts>
       </scripts>
     </scripts>
+    <scripts name="common">
+      <script>scripts\base_interact.gml</script>
+      <script>scripts\scr_test_rotating_interact.gml</script>
+      <script>scripts\scr_test_inventory_interact.gml</script>
+    </scripts>
+    <scripts name="inventory">
+      <script>scripts\scr_inventory_draw.gml</script>
+      <script>scripts\scr_inventory_add.gml</script>
+      <script>scripts\scr_inventory_init.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="persistent">
       <object>objects\obj_camera</object>
       <object>objects\heimao_object</object>
+      <object>objects\heimao_inventory</object>
     </objects>
     <objects name="devobj">
       <object>objects\obj_first_particle</object>
       <object>objects\obj_colSquare</object>
       <object>objects\obj_colSlope</object>
+      <object>objects\interactable</object>
+      <object>objects\test_rotating</object>
+      <object>objects\test_inventory</object>
     </objects>
   </objects>
   <rooms name="rooms">
