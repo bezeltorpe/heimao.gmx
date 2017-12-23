@@ -19,7 +19,15 @@ enum State
     LayingUp            // 13
 }
 
+
+// State initialization
 playerState = State.Standing;
+persistent = true;
+
+// Create Inventory
+inventory = instance_create(0,0,heimao_inventory);
+(inventory).persistent = true;
+(inventory).depth = -1000;
 
 ///Variables for Movement
 mspd = 1.5;
@@ -48,3 +56,6 @@ drawFootprint = false;
 drawSnowAngel = false;
 
 drawCatShadow = true;
+
+// Dumb preinitialization that we have to do
+keyInventory = false;

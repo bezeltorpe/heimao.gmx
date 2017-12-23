@@ -14,6 +14,7 @@ keyDown = keyboard_check(ord('S'));
 keyLeft = keyboard_check(ord('A'));
 keyRight = keyboard_check(ord('D'));
 keyAction = keyboard_check(ord('E'));
+keyInventory = keyInventory ^^ keyboard_check_pressed(ord('I'));
 xDir = keyRight - keyLeft;
 yDir = keyDown - keyUp;
 timer += 1;
@@ -24,22 +25,22 @@ sitHeld = keyboard_check(ord('Q'));
 sitRelease = keyboard_check_released(ord('Q'));
 
 if(sitPress)
-    {
+{
     sitTimer = 0.1; // TODO handle sitting timer properly with delta
     sitResult = 1;
-    }
+}
 
-if(sitHeld)
-    {sitTimer += 0.1;}
+if(sitHeld) {sitTimer += 0.1;}
     
-if(sitTimer > 0.5 && sitResult == 1)
-    {sitResult = 2;}
+if(sitTimer > 0.5 && sitResult == 1) {sitResult = 2;}
     
 if(sitRelease)
-    {
-        sitResult = 0;
-        sitTimer = 0;
-    }
+{
+    sitResult = 0;
+    sitTimer = 0;
+}
+
+(inventory).active = keyInventory;
 
 /********************/ 
 /********************/ 
