@@ -1,7 +1,6 @@
 # Heimao
 
-##
-TODO
+## TODO
 1. Inventory UI
  1. Image or Sprite instead of drawing ugly black rectangle
  2. Proper spacing between the items
