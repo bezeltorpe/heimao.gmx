@@ -139,6 +139,7 @@
         <sprite>sprites\spr_snowangel_LU1</sprite>
         <sprite>sprites\spr_snowangel_LU2</sprite>
       </sprites>
+      <sprite>sprites\spr_campfire</sprite>
     </sprites>
     <sprites name="devspr">
       <sprite>sprites\spr_colSquare</sprite>
@@ -151,8 +152,10 @@
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
+    <background>background\background2</background>
     <backgrounds name="tilesets">
       <background>background\overworld01</background>
+      <background>background\interior01</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -252,8 +255,12 @@
       <object>objects\test_rotating</object>
       <object>objects\test_inventory</object>
     </objects>
+    <objects name="fx">
+      <object>objects\obj_campfire</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\home_int</room>
     <room>rooms\testroom</room>
   </rooms>
   <help>
