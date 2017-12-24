@@ -15,18 +15,20 @@ if (active)
     draw_set_color(c_black);
     draw_rectangle(x1,y1,x2,y2,0);
     
-    // Draw the items    
-    for (var i = 0; i < 2; i++;)
+    // Draw the items
+    // TODO Fix the spacing to fit the inventory sprite when it's set.
+    for (var i = 0; i < ELEM_PER_COL; i++;)
     {
-        for (var j = 0; j < 5; j++;)
+        for (var j = 0; j < ELEM_PER_ROW; j++;)
         {
-            var index = i * 5 + j;
+            var index = i * ELEM_PER_ROW + j;
             if (icons[index] != -1)
             {
                 draw_sprite(icons[index], 0, x1 + j * widthBorder + widthBorder, y1 + i * heightBorder + heightBorder);
             }
         }
     }
+    
     // Highlight selected item if any item exists
     if (currentItemCount > 0)
     {
