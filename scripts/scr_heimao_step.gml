@@ -47,10 +47,11 @@ if(sitRelease)
 shouldBeInterrupted = (inventory).active;
 
 /********************/ 
+// Main step function
 /********************/ 
-
 if (!shouldBeInterrupted)
 {
+    image_speed = 0.15;
     // Update states accordingly
     scr_heimao_updateState();
     
@@ -59,4 +60,8 @@ if (!shouldBeInterrupted)
     
     // Draw
     scr_heimao_draw();
+}
+else
+{
+    image_speed = 0;
 }

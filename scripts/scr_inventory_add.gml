@@ -1,9 +1,8 @@
 var inventory = argument[0];
 var item = argument[1];
 var index = (inventory).currentItemCount;
-var maxItemCount = (inventory).maxItemCount;
 
-if (index < maxItemCount)
+if (index < (inventory).MAX_ITEM)
 {
     (inventory).icons[index] = (item).icon;
     (inventory).names[index] = (item).name;
