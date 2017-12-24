@@ -9,8 +9,9 @@ if (active)
     selectX += keyRight - keyLeft;
     selectY += keyDown - keyUp;
     
-    selectX = selectX % ELEM_PER_ROW;
-    selectY = selectY % ELEM_PER_COL;
+    // Because mod doesn't work with negatives
+    selectX = (selectX + ELEM_PER_ROW) % ELEM_PER_ROW;
+    selectY = (selectY  + ELEM_PER_COL)% ELEM_PER_COL;
 }
 else
 {
