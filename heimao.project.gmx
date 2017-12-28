@@ -263,9 +263,6 @@
     <objects name="fx">
       <object>objects\obj_campfire</object>
     </objects>
-    <objects name="fx">
-      <object>objects\obj_campfire</object>
-    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\testroom</room>
