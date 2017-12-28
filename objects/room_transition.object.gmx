@@ -25,9 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>other.x = self.startX;
+            <string>//insert fade-in animation here
+
+other.x = self.startX;
 other.y = self.startY;
 room_goto(transitionRoom);
+
+//insert fade-out animation here
 </string>
           </argument>
         </arguments>
