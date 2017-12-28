@@ -263,8 +263,12 @@
     <objects name="fx">
       <object>objects\obj_campfire</object>
     </objects>
+    <objects name="fx">
+      <object>objects\obj_campfire</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\home_int</room>
     <room>rooms\testroom</room>
     <room>rooms\home_int</room>
   </rooms>
