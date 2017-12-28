@@ -144,6 +144,8 @@
     <sprites name="devspr">
       <sprite>sprites\spr_colSquare</sprite>
       <sprite>sprites\spr_colSlope</sprite>
+      <sprite>sprites\transitionRoom_square</sprite>
+      <sprite>sprites\transitionRoom_slope</sprite>
     </sprites>
     <sprite>sprites\spr_snowball2</sprite>
     <sprite>sprites\spr_testrotate</sprite>
@@ -245,7 +247,6 @@
     <objects name="persistent">
       <object>objects\obj_camera</object>
       <object>objects\heimao_object</object>
-      <object>objects\heimao_inventory</object>
     </objects>
     <objects name="devobj">
       <object>objects\obj_first_particle</object>
@@ -253,7 +254,14 @@
       <object>objects\obj_colSlope</object>
       <object>objects\interactable</object>
       <object>objects\test_rotating</object>
+      <object>objects\heimao_inventory</object>
       <object>objects\test_inventory</object>
+      <object>objects\room_transitionSquare</object>
+      <object>objects\room_transitionSlope</object>
+      <object>objects\room_transition</object>
+    </objects>
+    <objects name="fx">
+      <object>objects\obj_campfire</object>
     </objects>
     <objects name="fx">
       <object>objects\obj_campfire</object>
@@ -262,6 +270,7 @@
   <rooms name="rooms">
     <room>rooms\home_int</room>
     <room>rooms\testroom</room>
+    <room>rooms\home_int</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -7,7 +7,7 @@
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code></code>
@@ -75,6 +75,7 @@
     <instance objName="test_inventory" x="96" y="160" name="inst_94C40ED8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="test_inventory" x="64" y="192" name="inst_8FB28416" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="test_inventory" x="96" y="192" name="inst_5BC396D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="room_transitionSlope" x="544" y="352" name="inst_E40F3801" locked="0" code="depth = -1000&#xA;transitionRoom = home_int;&#xA;startX = 144;&#xA;startY = 144;&#xA;" scaleX="-1" scaleY="-0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="overworld01" x="352" y="288" w="64" h="64" xo="0" yo="256" id="10000158" name="inst_AF81F3F9" depth="55" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
