@@ -267,6 +267,7 @@
   <rooms name="rooms">
     <room>rooms\testroom</room>
     <room>rooms\home_int</room>
+    <room>rooms\nexus</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
