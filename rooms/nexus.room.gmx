@@ -122,8 +122,8 @@
     <instance objName="obj_colSquare" x="480" y="256" name="inst_355416CF" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_colSquare" x="416" y="256" name="inst_DE37A100" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="room_transitionSlope" x="440" y="280" name="inst_EE094EB8" locked="0" code="depth = -1000&#xA;transitionRoom = home_int;&#xA;startX = 160;&#xA;startY = 160;" scaleX="-0.5" scaleY="-0.25" colour="4294967295" rotation="0"/>
-    <instance objName="room_transitionSquare" x="32" y="256" name="inst_A5D5D1CD" locked="0" code="depth = -1000&#xA;transitionRoom = west1;&#xA;startX = 752;&#xA;startY = 560;&#xA;" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
-    <instance objName="room_transitionSquare" x="848" y="208" name="inst_C406A656" locked="0" code="" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
+    <instance objName="room_transitionSquare" x="32" y="256" name="inst_A5D5D1CD" locked="0" code="depth = -1000&#xA;transitionRoom = west1;&#xA;startX = 752;&#xA;startY = 560;" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
+    <instance objName="room_transitionSquare" x="848" y="208" name="inst_C406A656" locked="0" code="depth = -1000&#xA;transitionRoom = east1;&#xA;startX = 128;&#xA;startY = 224;&#xA;" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="overworld01" x="0" y="0" w="32" h="32" xo="384" yo="32" id="10001988" name="inst_7A3BFC66" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
