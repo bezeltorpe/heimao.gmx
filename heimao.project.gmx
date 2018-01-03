@@ -265,14 +265,17 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\nexus</room>
     <rooms name="test">
       <room>rooms\testroom</room>
     </rooms>
-    <room>rooms\nexus</room>
     <room>rooms\home_int</room>
     <rooms name="west">
       <room>rooms\west1</room>
       <room>rooms\west2</room>
+    </rooms>
+    <rooms name="east">
+      <room>rooms\east1</room>
     </rooms>
   </rooms>
   <help>

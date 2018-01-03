@@ -6,18 +6,18 @@ if (heimao_object.playerState = 3)
     {
     if (centerDistance < 8)
         {
-        speed = centerDistance * 4 / 60;
+        speed = floor(centerDistance * 4 / 60);
         direction = dirToPlayer;
         }
     else
         {
-        speed = centerDistance * 8 / 60;
+        speed = floor(centerDistance * 8 / 60);
         direction = dirToPlayer;
         }
     }
 else
     {
     speed = 0;
-    x = lerp(x, heimao_object.x, 0.1);
-    y = lerp(y, heimao_object.y, 0.1);
+    x = floor(lerp(x, heimao_object.x, 0.1));
+    y = floor(lerp(y, heimao_object.y, 0.1));
     }
