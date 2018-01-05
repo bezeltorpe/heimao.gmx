@@ -5,6 +5,7 @@ switch(playerState)
     case State.Running:
         whichFoot = !whichFoot; 
         drawFootprint = true;
+        audio_play_sound(sfx_step_snow0, 5, false);
         break;
 
     case State.SittingDown:

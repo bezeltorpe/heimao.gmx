@@ -4,7 +4,10 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sfx_step_snow0</sound>
+    <sound>sound\sfx_effect_bell</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="heimao">
       <sprites name="idle">
@@ -150,6 +153,15 @@
     <sprite>sprites\spr_snowball2</sprite>
     <sprite>sprites\spr_testrotate</sprite>
     <sprite>sprites\spr_testitem</sprite>
+    <sprites name="items">
+      <sprites name="bell">
+        <sprite>sprites\spr_inv_bell</sprite>
+        <sprite>sprites\spr_anim_bell</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="props">
+      <sprite>sprites\spr_tinyshrine</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -263,12 +275,15 @@
     <objects name="fx">
       <object>objects\obj_campfire</object>
     </objects>
+    <objects name="props">
+      <object>objects\obj_tinyshrine</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\nexus</room>
     <rooms name="test">
       <room>rooms\testroom</room>
     </rooms>
+    <room>rooms\nexus</room>
     <room>rooms\home_int</room>
     <rooms name="west">
       <room>rooms\west1</room>

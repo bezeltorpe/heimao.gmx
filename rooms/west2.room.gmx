@@ -53,6 +53,7 @@
   <instances>
     <instance objName="obj_camera" x="576" y="400" name="inst_0C82A206" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="room_transitionSquare" x="1136" y="688" name="inst_8ABFA2C6" locked="0" code="depth = -1000&#xA;transitionRoom = west1;&#xA;startX = 80;&#xA;startY = 128;&#xA;" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tinyshrine" x="560" y="352" name="inst_D68907FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="overworld01" x="736" y="416" w="32" h="32" xo="384" yo="32" id="10003623" name="inst_5BDF7B42" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

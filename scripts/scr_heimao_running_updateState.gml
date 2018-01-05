@@ -12,6 +12,8 @@ if ((xDir == 0 && yDir == 0))
     whichFoot = !whichFoot;
     vx = 0;
     vy = 0;
+    audio_play_sound(sfx_step_snow0, 5, false);
+    drawFootprint = true;
 }
 
 // Check for sitdown
