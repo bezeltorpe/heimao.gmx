@@ -19,7 +19,6 @@ enum State
     LayingUp            // 13
 }
 
-// Check if another instance already exists and delete this one if so
 if (instance_number(heimao_object) > 1)
 {
 with (self) instance_destroy();
@@ -29,10 +28,36 @@ with (self) instance_destroy();
 playerState = State.Standing;
 persistent = true;
 
+// Map Zones
+enum mapZone
+{
+    Nexus,
+    East,
+    West,
+    North,
+    South,
+    Under,
+    Other
+}
+
+//Zone initialization
+global.currentMapZone = mapZone.Other;
+global.prevMapZone = mapZone.Other;
+
 // Create Inventory
 inventory = instance_create(0,0,heimao_inventory);
 (inventory).persistent = true;
 (inventory).depth = -1000;
+
+// BGM Sync Groups
+global.bgmNexus = audio_create_sync_group(true);
+audio_play_in_sync_group(global.bgmNexus, mus_home_bass);
+audio_sound_gain(mus_home_bass, 1, 250);
+audio_play_in_sync_group(global.bgmNexus, mus_home_melody);
+audio_sound_gain(mus_home_melody, 0, 0);
+
+// BGM initialization
+changeBGM = false;
 
 ///Variables for Movement
 mspd = 1.5;

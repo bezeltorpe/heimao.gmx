@@ -5,8 +5,20 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sfx_step_snow0</sound>
-    <sound>sound\sfx_effect_bell</sound>
+    <sounds name="sfx">
+      <sound>sound\sfx_heimao_angel</sound>
+      <sound>sound\sfx_effect_bell</sound>
+      <sound>sound\sfx_heimao_step</sound>
+      <sound>sound\sfx_heimao_sit</sound>
+      <sound>sound\sfx_heimao_angelflop</sound>
+    </sounds>
+    <sounds name="mus">
+      <sound>sound\mus_home</sound>
+      <sounds name="home">
+        <sound>sound\mus_home_melody</sound>
+        <sound>sound\mus_home_bass</sound>
+      </sounds>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="heimao">
@@ -257,8 +269,8 @@
   </scripts>
   <objects name="objects">
     <objects name="persistent">
-      <object>objects\obj_camera</object>
       <object>objects\heimao_object</object>
+      <object>objects\obj_camera</object>
     </objects>
     <objects name="devobj">
       <object>objects\obj_first_particle</object>
@@ -280,10 +292,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\nexus</room>
     <rooms name="test">
       <room>rooms\testroom</room>
     </rooms>
-    <room>rooms\nexus</room>
     <room>rooms\home_int</room>
     <rooms name="west">
       <room>rooms\west1</room>
