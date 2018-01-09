@@ -13,7 +13,6 @@
       <sound>sound\sfx_heimao_angelflop</sound>
     </sounds>
     <sounds name="mus">
-      <sound>sound\mus_home</sound>
       <sounds name="home">
         <sound>sound\mus_home_melody</sound>
         <sound>sound\mus_home_bass</sound>
@@ -173,6 +172,7 @@
     </sprites>
     <sprites name="props">
       <sprite>sprites\spr_tinyshrine</sprite>
+      <sprite>sprites\spr_log15</sprite>
     </sprites>
     <sprites name="overlays">
       <sprite>sprites\whitefill</sprite>
@@ -293,6 +293,7 @@
     </objects>
     <objects name="props">
       <object>objects\obj_tinyshrine</object>
+      <object>objects\obj_log15</object>
     </objects>
     <objects name="items">
       <object>objects\obj_item_tinybell</object>
