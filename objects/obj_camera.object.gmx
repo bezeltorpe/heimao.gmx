@@ -2,12 +2,42 @@
 <object>
   <spriteName>spr_camera</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
-  <depth>0</depth>
+  <visible>-1</visible>
+  <depth>-10000</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>overlay_index = whitefill;
+transition = transitionType.Fade;
+fadeTick = 0;
+holdTimer = 0;
+
+transitionStart = false;
+transitionHalf = false;
+transitionComplete = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
@@ -46,6 +76,108 @@
           <argument>
             <kind>0</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (transitionStart &amp;&amp; transitionHalf &amp;&amp; transitionComplete)
+{
+    transitionStart = false;
+    transitionHalf = false;
+    transitionComplete = false;
+    fadeTick = 0;
+    holdTimer = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>fadeTick = clamp(fadeTick, 0, 1);
+holdTimer = clamp(holdTimer, 0, 5);
+
+if (transitionStart)
+{
+    if (transition == transitionType.Fade)
+    {
+        //show_debug_message(string(fadeTick) + string(holdTimer));
+        if (fadeTick &lt; 1 &amp;&amp; holdTimer == 0)
+        {fadeTick += 0.1;}
+        
+        if (fadeTick == 1 &amp;&amp; holdTimer &lt; 5)
+        {holdTimer += 1; transitionHalf = true;
+        show_debug_message("halfway warped")}
+        if (holdTimer == 5)
+        {fadeTick -= 0.1;
+            if (fadeTick == 0)
+                {transitionComplete = true;
+                show_debug_message("warp complete")}
+        }
+    }
+            
+    if (transition == transitionType.Instant)
+    {
+        show_debug_message("zoom");
+        transitionHalf = true; transitionComplete = true;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (transition == transitionType.Fade)
+{draw_sprite_ext(overlay_index, 0, view_xview, view_yview, 1, 1, 0, c_white, fadeTick)}
+</string>
           </argument>
         </arguments>
       </action>

@@ -25,13 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//insert fade-in animation here
+            <string>obj_camera.transitionStart = true;
+obj_camera.transition = thisObjTransition;
+obj_camera.overlay_index = overlay_index;
+heimao_object.canMove = false;
 
-other.x = self.startX;
-other.y = self.startY;
-room_goto(transitionRoom);
-
-//insert fade-out animation here
+if (obj_camera.transitionHalf)
+{
+    heimao_object.x = self.startX;
+    heimao_object.y = self.startY;
+    obj_camera.x = self.startX;
+    obj_camera.y = self.startY;
+    heimao_object.canMove = true;
+    room_goto(transitionRoom);
+}
 </string>
           </argument>
         </arguments>

@@ -35,9 +35,16 @@ enum mapZone
     Other
 }
 
-//Zone initialization
+// Zone initialization
 global.currentMapZone = mapZone.Other;
 global.prevMapZone = mapZone.Other;
+
+// Screen Transition Types. add more later?
+enum transitionType
+{
+    Fade,
+    Instant
+}
 
 // Create Inventory
 inventory = instance_create(0,0,heimao_inventory);
