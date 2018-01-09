@@ -94,5 +94,7 @@ drawSnowAngel = false;
 
 drawCatShadow = true;
 
+tinybell = false;
+
 // Dumb preinitialization that we have to do
 keyInventory = false;

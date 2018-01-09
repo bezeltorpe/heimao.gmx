@@ -294,6 +294,9 @@
     <objects name="props">
       <object>objects\obj_tinyshrine</object>
     </objects>
+    <objects name="items">
+      <object>objects\obj_item_tinybell</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\nexus</room>
