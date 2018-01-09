@@ -19,6 +19,11 @@ enum State
     LayingUp            // 13
 }
 
+// Check if another instance already exists and delete this one if so
+if (instance_number(heimao_object) > 1)
+{
+with (self) instance_destroy();
+}
 
 // State initialization
 playerState = State.Standing;

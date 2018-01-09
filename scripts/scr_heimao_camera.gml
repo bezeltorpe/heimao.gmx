@@ -1,23 +1,23 @@
-var centerDistance = distance_to_point(heimao_object.x, heimao_object.y);
+var centerDistance = distance_to_point(obj_camera.x, obj_camera.y);
 //Camera Script
-var dirToPlayer = point_direction(x, y, heimao_object.x, heimao_object.y);
+var dirToPlayer = point_direction(obj_camera.x, obj_camera.y, x, y);
 
-if (heimao_object.playerState = 3)
+if (self.playerState = 3)
     {
     if (centerDistance < 8)
         {
-        speed = floor(centerDistance * 4 / 60);
-        direction = dirToPlayer;
+        obj_camera.speed = floor(centerDistance * 4 / 60);
+        obj_camera.direction = dirToPlayer;
         }
     else
         {
-        speed = floor(centerDistance * 8 / 60);
-        direction = dirToPlayer;
+        obj_camera.speed = floor(centerDistance * 8 / 60);
+        obj_camera.direction = dirToPlayer;
         }
     }
 else
     {
-    speed = 0;
-    x = floor(lerp(x, heimao_object.x, 0.1));
-    y = floor(lerp(y, heimao_object.y, 0.1));
+    obj_camera.speed = 0;
+    obj_camera.x = floor(lerp(obj_camera.x, x, 0.1));
+    obj_camera.y = floor(lerp(obj_camera.y, y, 0.1));
     }
