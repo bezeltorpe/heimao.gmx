@@ -1,6 +1,7 @@
 if (sitResult == 1)
 {
     playerState = State.StandingUp;
+    audio_play_sound(sfx_heimao_standup, 5, false);
 }
 else if (sitResult == 2)
 {

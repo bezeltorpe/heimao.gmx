@@ -10,12 +10,16 @@
       <sound>sound\sfx_effect_bell</sound>
       <sound>sound\sfx_heimao_step</sound>
       <sound>sound\sfx_heimao_sit</sound>
+      <sound>sound\sfx_heimao_standup</sound>
+      <sound>sound\sfx_heimao_situp</sound>
       <sound>sound\sfx_heimao_angelflop</sound>
     </sounds>
     <sounds name="mus">
       <sounds name="home">
         <sound>sound\mus_home_melody</sound>
         <sound>sound\mus_home_bass</sound>
+        <sound>sound\mus_home_melodyp1</sound>
+        <sound>sound\mus_home_melodyp2</sound>
       </sounds>
     </sounds>
   </sounds>

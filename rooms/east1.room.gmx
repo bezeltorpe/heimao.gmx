@@ -3,8 +3,8 @@
   <caption></caption>
   <width>784</width>
   <height>1480</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="room_transitionSquare" x="32" y="160" name="inst_AEBFE148" locked="0" code="depth = -1000&#xA;transitionRoom = nexus;&#xA;startX = 816;&#xA;startY = 256;&#xA;" scaleX="0.5" scaleY="4.12903213500977" colour="4294967295" rotation="0"/>
+    <instance objName="room_transitionSquare" x="0" y="160" name="inst_AEBFE148" locked="0" code="depth = -1000&#xA;transitionRoom = nexus;&#xA;startX = 848;&#xA;startY = 256;&#xA;&#xA;forceAngle = true;&#xA;angleToFace = 6;&#xA;&#xA;thisObjTransition = transitionType.Fade;&#xA;overlay_index = whitefill;&#xA;" scaleX="0.5" scaleY="4.12903213500977" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="overworld01" x="0" y="128" w="32" h="32" xo="384" yo="32" id="10004111" name="inst_6F4A1A8F" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

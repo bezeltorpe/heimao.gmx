@@ -7,5 +7,6 @@ if (keyUp + keyDown + keyLeft + keyRight)
 if (sitResult == 1)
 {
     playerState = State.LayingUp;
+    audio_play_sound(sfx_heimao_situp, 5, false);
 }
 
