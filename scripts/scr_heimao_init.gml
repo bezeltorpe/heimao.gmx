@@ -60,8 +60,10 @@ inventory = instance_create(0,0,heimao_inventory);
 global.bgmNexus = audio_create_sync_group(true);
 audio_play_in_sync_group(global.bgmNexus, mus_home_bass);
 audio_sound_gain(mus_home_bass, 1, 250);
-audio_play_in_sync_group(global.bgmNexus, mus_home_melody);
-audio_sound_gain(mus_home_melody, 0, 0);
+audio_play_in_sync_group(global.bgmNexus, mus_home_melodyp1);
+audio_sound_gain(mus_home_melodyp1, 0, 0);
+audio_play_in_sync_group(global.bgmNexus, mus_home_melodyp2);
+audio_sound_gain(mus_home_melodyp2, 0, 0);
 
 // BGM initialization
 changeBGM = false;

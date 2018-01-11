@@ -3,8 +3,8 @@
   <caption></caption>
   <width>896</width>
   <height>608</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>4</vsnap>
+  <hsnap>4</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -12,7 +12,8 @@
   <showcolour>-1</showcolour>
   <code>global.currentMapZone = mapZone.Nexus;
 
-audio_sound_gain(mus_home_melody, 0, 1000);
+audio_sound_gain(mus_home_melodyp1, 0, 1000);
+audio_sound_gain(mus_home_melodyp2, 0, 1000);
 audio_sound_gain(mus_home_bass, 0, 5000);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
@@ -117,16 +118,17 @@ audio_sound_gain(mus_home_bass, 0, 5000);</code>
     <instance objName="obj_colSquare" x="720" y="192" name="inst_BD9C1740" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_colSlope" x="336" y="128" name="inst_EE45CA78" locked="0" code="" scaleX="0.5" scaleY="-0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_colSquare" x="304" y="96" name="inst_9F871414" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_colSlope" x="464" y="240" name="inst_CFA07076" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_colSlope" x="448" y="240" name="inst_8855DD61" locked="0" code="" scaleX="-1" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_colSquare" x="448" y="240" name="inst_733E4416" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_colSlope" x="464" y="288" name="inst_9BE04174" locked="0" code="" scaleX="1" scaleY="-0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_colSquare" x="432" y="272" name="inst_5F8AE092" locked="0" code="" scaleX="1.03225803375244" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_colSquare" x="480" y="256" name="inst_355416CF" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_colSquare" x="416" y="256" name="inst_DE37A100" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="room_transitionSlope" x="432" y="280" name="inst_EE094EB8" locked="0" code="depth = -1000&#xA;transitionRoom = home_int;&#xA;startX = 160;&#xA;startY = 180;&#xA;forceAngle = true;&#xA;angleToFace = 4;&#xA;&#xA;thisObjTransition = transitionType.Fade;&#xA;overlay_index = blackfill;&#xA;" scaleX="-0.5" scaleY="-0.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colSlope" x="484" y="240" name="inst_CFA07076" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colSlope" x="444" y="240" name="inst_8855DD61" locked="0" code="" scaleX="-1" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colSquare" x="444" y="240" name="inst_733E4416" locked="0" code="" scaleX="1.25" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colSlope" x="468" y="288" name="inst_9BE04174" locked="0" code="" scaleX="1" scaleY="-0.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colSquare" x="440" y="280" name="inst_5F8AE092" locked="0" code="" scaleX="0.875" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colSquare" x="484" y="256" name="inst_355416CF" locked="0" code="" scaleX="0.5" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colSquare" x="412" y="248" name="inst_DE37A100" locked="0" code="" scaleX="0.25" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="room_transitionSlope" x="432" y="280" name="inst_EE094EB8" locked="0" code="depth = -1000&#xA;transitionRoom = home_int;&#xA;startX = 160;&#xA;startY = 180;&#xA;forceAngle = true;&#xA;angleToFace = 4;&#xA;&#xA;thisObjTransition = transitionType.Fade;&#xA;overlay_index = blackfill;&#xA;" scaleX="-0.375" scaleY="-0.25" colour="4294967295" rotation="0"/>
     <instance objName="room_transitionSquare" x="0" y="256" name="inst_A5D5D1CD" locked="0" code="depth = -1000&#xA;transitionRoom = west1;&#xA;startX = 768;&#xA;startY = 560;&#xA;&#xA;forceAngle = true;&#xA;angleToFace = 6;&#xA;&#xA;thisObjTransition = transitionType.Fade;&#xA;overlay_index = whitefill;" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
     <instance objName="room_transitionSquare" x="880" y="208" name="inst_C406A656" locked="0" code="depth = -1000&#xA;transitionRoom = east1;&#xA;startX = 48;&#xA;startY = 224;&#xA;forceAngle = true;&#xA;angleToFace = 2;&#xA;&#xA;thisObjTransition = transitionType.Fade;&#xA;overlay_index = whitefill;&#xA;&#xA;changeBGM = true;&#xA;" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_colSlope" x="440" y="288" name="inst_C8391313" locked="0" code="" scaleX="-0.25" scaleY="-0.25" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="overworld01" x="0" y="0" w="32" h="32" xo="384" yo="32" id="10001988" name="inst_7A3BFC66" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -912,6 +914,7 @@ audio_sound_gain(mus_home_bass, 0, 5000);</code>
     <tile bgName="overworld01" x="160" y="224" w="32" h="32" xo="160" yo="32" id="10003314" name="inst_1FBB1C2B" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="96" y="224" w="32" h="32" xo="160" yo="32" id="10003315" name="inst_083B31DD" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="32" y="240" w="32" h="32" xo="160" yo="32" id="10003316" name="inst_FEBE37CC" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="400" y="208" w="112" h="96" xo="336" yo="192" id="10006317" name="inst_C04623DF" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="0" y="320" w="32" h="192" xo="128" yo="0" id="10003099" name="inst_0A2AD58F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="64" y="320" w="32" h="192" xo="128" yo="0" id="10003100" name="inst_E14E43CA" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="128" y="320" w="32" h="192" xo="128" yo="0" id="10003101" name="inst_2686CFC1" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -940,11 +943,9 @@ audio_sound_gain(mus_home_bass, 0, 5000);</code>
     <tile bgName="overworld01" x="160" y="304" w="32" h="192" xo="96" yo="0" id="10003124" name="inst_DEA4925F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="96" y="304" w="32" h="192" xo="96" yo="0" id="10003125" name="inst_0111392E" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="32" y="304" w="32" h="192" xo="96" yo="0" id="10003126" name="inst_88EBD62A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="384" y="208" w="128" h="32" xo="320" yo="192" id="10003266" name="inst_7C521EB8" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="448" y="240" w="48" h="16" xo="384" yo="224" id="10003381" name="inst_12A50CA7" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="493" y="238" w="13" h="12" xo="429" yo="222" id="10003382" name="inst_D2BECEED" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="416" y="240" w="32" h="16" xo="352" yo="224" id="10003383" name="inst_22534544" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="400" y="240" w="16" h="16" xo="336" yo="224" id="10003385" name="inst_D5491959" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="400" y="208" w="112" h="48" xo="336" yo="192" id="10006318" name="inst_82A3A391" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="408" y="256" w="104" h="8" xo="344" yo="240" id="10006319" name="inst_B1169B66" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="720" y="320" w="32" h="192" xo="128" yo="192" id="10003127" name="inst_E8A5EB01" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="784" y="320" w="32" h="192" xo="128" yo="192" id="10003128" name="inst_1006B666" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="848" y="320" w="32" h="192" xo="128" yo="192" id="10003129" name="inst_8F9CCECE" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

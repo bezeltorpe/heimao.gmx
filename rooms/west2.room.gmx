@@ -51,45 +51,39 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="room_transitionSquare" x="1168" y="688" name="inst_8ABFA2C6" locked="0" code="depth = -1000&#xA;transitionRoom = west1;&#xA;startX = 48;&#xA;startY = 128;&#xA;&#xA;forceAngle = true;&#xA;angleToFace = 2;&#xA;&#xA;thisObjTransition = transitionType.Fade;&#xA;overlay_index = whitefill;&#xA;" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
+    <instance objName="room_transitionSquare" x="1168" y="224" name="inst_8ABFA2C6" locked="0" code="depth = -1000&#xA;transitionRoom = west1;&#xA;startX = 48;&#xA;startY = 128;&#xA;&#xA;forceAngle = true;&#xA;angleToFace = 2;&#xA;&#xA;thisObjTransition = transitionType.Fade;&#xA;overlay_index = whitefill;&#xA;" scaleX="0.5" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
     <instance objName="obj_tinyshrine" x="560" y="352" name="inst_D68907FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="overworld01" x="736" y="416" w="32" h="32" xo="384" yo="32" id="10003623" name="inst_5BDF7B42" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="768" y="416" w="32" h="32" xo="384" yo="32" id="10003630" name="inst_DBFB92A8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="896" y="256" w="32" h="32" xo="384" yo="32" id="10003631" name="inst_851FE2D2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="864" y="160" w="32" h="32" xo="384" yo="32" id="10003634" name="inst_3E3595ED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="576" y="320" w="32" h="32" xo="384" yo="32" id="10003635" name="inst_BCB568C6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="640" y="352" w="32" h="32" xo="384" yo="32" id="10003636" name="inst_3F6B0691" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="608" y="352" w="32" h="32" xo="384" yo="32" id="10003638" name="inst_211796FD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="704" y="192" w="32" h="32" xo="384" yo="32" id="10003639" name="inst_ECABA5E3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="768" y="128" w="32" h="32" xo="384" yo="32" id="10003640" name="inst_87249F92" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="896" y="320" w="32" h="32" xo="384" yo="32" id="10003642" name="inst_A2EBEBD2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="896" y="288" w="32" h="32" xo="384" yo="32" id="10003643" name="inst_8D1179D5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="896" y="224" w="32" h="32" xo="384" yo="32" id="10003645" name="inst_CBB59D88" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="864" y="192" w="32" h="32" xo="384" yo="32" id="10003647" name="inst_2C9128E4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="800" y="128" w="32" h="32" xo="384" yo="32" id="10003649" name="inst_94E99739" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="864" y="416" w="32" h="32" xo="384" yo="32" id="10003623" name="inst_5BDF7B42" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="672" y="736" w="32" h="32" xo="384" yo="32" id="10003630" name="inst_DBFB92A8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="640" y="192" w="32" h="32" xo="384" yo="32" id="10003635" name="inst_BCB568C6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="576" y="320" w="32" h="32" xo="384" yo="32" id="10003636" name="inst_3F6B0691" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="448" y="192" w="32" h="32" xo="384" yo="32" id="10003638" name="inst_211796FD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="480" y="192" w="32" h="32" xo="384" yo="32" id="10003639" name="inst_ECABA5E3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="640" y="352" w="32" h="32" xo="384" yo="32" id="10003640" name="inst_87249F92" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="960" y="256" w="32" h="32" xo="384" yo="32" id="10003642" name="inst_A2EBEBD2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="384" y="256" w="32" h="32" xo="384" yo="32" id="10003645" name="inst_CBB59D88" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="384" y="288" w="32" h="32" xo="384" yo="32" id="10003647" name="inst_2C9128E4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="608" y="576" w="32" h="32" xo="384" yo="32" id="10003649" name="inst_94E99739" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="640" y="64" w="32" h="32" xo="384" yo="32" id="10003650" name="inst_2AE6002D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="832" y="128" w="32" h="32" xo="384" yo="32" id="10003652" name="inst_E4637F72" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="736" y="96" w="32" h="32" xo="384" yo="32" id="10003653" name="inst_5BA2FF1E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="608" y="32" w="32" h="32" xo="384" yo="32" id="10003654" name="inst_A74F199E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="672" y="64" w="32" h="32" xo="384" yo="32" id="10003655" name="inst_951D3C2F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="512" y="96" w="32" h="32" xo="384" yo="32" id="10003661" name="inst_EF133DF5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="672" y="128" w="32" h="32" xo="384" yo="32" id="10003655" name="inst_951D3C2F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="544" y="96" w="32" h="32" xo="384" yo="32" id="10003661" name="inst_EF133DF5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="544" y="128" w="32" h="32" xo="384" yo="32" id="10003662" name="inst_BF0A9969" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="576" y="160" w="32" h="32" xo="384" yo="32" id="10003663" name="inst_4D47C0F0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="608" y="160" w="32" h="32" xo="384" yo="32" id="10003665" name="inst_62608D54" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="672" y="192" w="32" h="32" xo="384" yo="32" id="10003670" name="inst_7CF1EEC4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="480" y="64" w="32" h="32" xo="384" yo="32" id="10003673" name="inst_4168B008" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="736" y="224" w="32" h="32" xo="384" yo="32" id="10003674" name="inst_BC850961" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="640" y="160" w="32" h="32" xo="384" yo="32" id="10003675" name="inst_6894219E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="416" y="224" w="32" h="32" xo="384" yo="32" id="10003663" name="inst_4D47C0F0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="512" y="160" w="32" h="32" xo="384" yo="32" id="10003665" name="inst_62608D54" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="512" y="64" w="32" h="32" xo="384" yo="32" id="10003673" name="inst_4168B008" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="384" y="320" w="32" h="32" xo="384" yo="32" id="10003674" name="inst_BC850961" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="736" y="736" w="32" h="32" xo="384" yo="32" id="10003675" name="inst_6894219E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="512" y="320" w="32" h="32" xo="384" yo="32" id="10003677" name="inst_574CEDC4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="672" y="320" w="32" h="32" xo="384" yo="32" id="10003678" name="inst_9A84FFAB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="480" y="352" w="32" h="32" xo="384" yo="32" id="10003679" name="inst_CD5CFF44" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="544" y="320" w="32" h="32" xo="384" yo="32" id="10003680" name="inst_CFC889DE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="704" y="288" w="32" h="32" xo="384" yo="32" id="10003681" name="inst_4DC4637B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="736" y="256" w="32" h="32" xo="384" yo="32" id="10003682" name="inst_7BF945BD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="448" y="352" w="32" h="32" xo="384" yo="32" id="10003685" name="inst_11E12C9D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="416" y="384" w="32" h="32" xo="384" yo="32" id="10003686" name="inst_E2754D57" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="608" y="320" w="32" h="32" xo="384" yo="32" id="10003678" name="inst_9A84FFAB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="576" y="256" w="32" h="32" xo="384" yo="32" id="10003679" name="inst_CD5CFF44" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="512" y="288" w="32" h="32" xo="384" yo="32" id="10003680" name="inst_CFC889DE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="672" y="160" w="32" h="32" xo="384" yo="32" id="10003681" name="inst_4DC4637B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="608" y="224" w="32" h="32" xo="384" yo="32" id="10003682" name="inst_7BF945BD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="544" y="320" w="32" h="32" xo="384" yo="32" id="10003685" name="inst_11E12C9D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="544" y="256" w="32" h="32" xo="384" yo="32" id="10003686" name="inst_E2754D57" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="320" y="384" w="32" h="32" xo="384" yo="32" id="10003688" name="inst_476597BC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="288" y="352" w="32" h="32" xo="384" yo="32" id="10003689" name="inst_5D0DD37D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="480" y="32" w="32" h="32" xo="384" yo="32" id="10003690" name="inst_89787F0B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -114,74 +108,64 @@
     <tile bgName="overworld01" x="256" y="480" w="32" h="32" xo="384" yo="32" id="10003741" name="inst_AF70B3EE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="288" y="480" w="32" h="32" xo="384" yo="32" id="10003742" name="inst_B52A78E9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="384" y="512" w="32" h="32" xo="384" yo="32" id="10003747" name="inst_7C5DF70C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="1152" y="800" w="32" h="32" xo="384" yo="32" id="10003842" name="inst_C4D79E0F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="1120" y="800" w="32" h="32" xo="384" yo="32" id="10003844" name="inst_F2E31B83" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="1104" y="768" w="32" h="32" xo="384" yo="32" id="10003846" name="inst_0E584B05" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="1072" y="768" w="32" h="32" xo="384" yo="32" id="10003849" name="inst_FD025621" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="1040" y="768" w="32" h="32" xo="384" yo="32" id="10003851" name="inst_683F3063" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="928" y="704" w="32" h="32" xo="384" yo="32" id="10003853" name="inst_EBA59B28" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="992" y="736" w="32" h="32" xo="384" yo="32" id="10003855" name="inst_2C5D6D79" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="960" y="736" w="32" h="32" xo="384" yo="32" id="10003857" name="inst_AACEECA1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="896" y="704" w="32" h="32" xo="384" yo="32" id="10003861" name="inst_BB912827" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="864" y="704" w="32" h="32" xo="384" yo="32" id="10003866" name="inst_5D02E687" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="832" y="704" w="32" h="32" xo="384" yo="32" id="10003868" name="inst_D0137202" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="800" y="704" w="32" h="32" xo="384" yo="32" id="10003872" name="inst_617234F9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="736" y="672" w="32" h="32" xo="384" yo="32" id="10003877" name="inst_14E4F349" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="704" y="672" w="32" h="32" xo="384" yo="32" id="10003882" name="inst_58606A23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="704" y="480" w="32" h="32" xo="384" yo="32" id="10003883" name="inst_D436AEC9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="672" y="640" w="32" h="32" xo="384" yo="32" id="10003885" name="inst_C2F141F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="640" y="608" w="32" h="32" xo="384" yo="32" id="10003888" name="inst_537C2B5B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="608" y="576" w="32" h="32" xo="384" yo="32" id="10003890" name="inst_65CC4DB8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="576" y="544" w="32" h="32" xo="384" yo="32" id="10003893" name="inst_F282DD18" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="544" y="544" w="32" h="32" xo="384" yo="32" id="10003897" name="inst_1C32EE2B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="512" y="512" w="32" h="32" xo="384" yo="32" id="10003900" name="inst_5EA2F21B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="448" y="512" w="32" h="32" xo="384" yo="32" id="10003905" name="inst_0CC5140A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="960" y="288" w="32" h="32" xo="384" yo="32" id="10003842" name="inst_C4D79E0F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="1152" y="320" w="32" h="32" xo="384" yo="32" id="10003844" name="inst_F2E31B83" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="1120" y="320" w="32" h="32" xo="384" yo="32" id="10003846" name="inst_0E584B05" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="1088" y="352" w="32" h="32" xo="384" yo="32" id="10003849" name="inst_FD025621" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="1056" y="384" w="32" h="32" xo="384" yo="32" id="10003851" name="inst_683F3063" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="832" y="640" w="32" h="32" xo="384" yo="32" id="10003853" name="inst_EBA59B28" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="896" y="608" w="32" h="32" xo="384" yo="32" id="10003855" name="inst_2C5D6D79" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="864" y="640" w="32" h="32" xo="384" yo="32" id="10003857" name="inst_AACEECA1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="928" y="320" w="32" h="32" xo="384" yo="32" id="10003861" name="inst_BB912827" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="704" y="736" w="32" h="32" xo="384" yo="32" id="10003872" name="inst_617234F9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="544" y="480" w="32" h="32" xo="384" yo="32" id="10003877" name="inst_14E4F349" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="608" y="544" w="32" h="32" xo="384" yo="32" id="10003883" name="inst_D436AEC9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="576" y="640" w="32" h="32" xo="384" yo="32" id="10003885" name="inst_C2F141F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="576" y="672" w="32" h="32" xo="384" yo="32" id="10003888" name="inst_537C2B5B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="576" y="608" w="32" h="32" xo="384" yo="32" id="10003890" name="inst_65CC4DB8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="576" y="512" w="32" h="32" xo="384" yo="32" id="10003893" name="inst_F282DD18" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="576" y="480" w="32" h="32" xo="384" yo="32" id="10003897" name="inst_1C32EE2B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="512" y="480" w="32" h="32" xo="384" yo="32" id="10003900" name="inst_5EA2F21B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="448" y="480" w="32" h="32" xo="384" yo="32" id="10003905" name="inst_0CC5140A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="416" y="512" w="32" h="32" xo="384" yo="32" id="10003906" name="inst_D2B262F6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="480" y="512" w="32" h="32" xo="384" yo="32" id="10003907" name="inst_03661202" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="480" y="480" w="32" h="32" xo="384" yo="32" id="10003907" name="inst_03661202" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="32" y="320" w="32" h="32" xo="384" yo="32" id="10003908" name="inst_36A8F509" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="352" y="512" w="32" h="32" xo="384" yo="32" id="10003909" name="inst_A1740CD1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="320" y="480" w="32" h="32" xo="384" yo="32" id="10003910" name="inst_BB9D0127" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="1152" y="672" w="32" h="32" xo="384" yo="32" id="10003925" name="inst_45153677" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="1088" y="640" w="32" h="32" xo="384" yo="32" id="10003928" name="inst_348BB75A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="1120" y="640" w="32" h="32" xo="384" yo="32" id="10003929" name="inst_DCC057F3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="1056" y="608" w="32" h="32" xo="384" yo="32" id="10003931" name="inst_1B494739" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="1024" y="608" w="32" h="32" xo="384" yo="32" id="10003935" name="inst_7F8E9BAC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="992" y="576" w="32" h="32" xo="384" yo="32" id="10003941" name="inst_C616CE6B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="928" y="576" w="32" h="32" xo="384" yo="32" id="10003943" name="inst_27A9CC59" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="1152" y="192" w="32" h="32" xo="384" yo="32" id="10003925" name="inst_45153677" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="1088" y="160" w="32" h="32" xo="384" yo="32" id="10003928" name="inst_348BB75A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="1120" y="192" w="32" h="32" xo="384" yo="32" id="10003929" name="inst_DCC057F3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="1056" y="160" w="32" h="32" xo="384" yo="32" id="10003931" name="inst_1B494739" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="1024" y="160" w="32" h="32" xo="384" yo="32" id="10003935" name="inst_7F8E9BAC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="928" y="288" w="32" h="32" xo="384" yo="32" id="10003941" name="inst_C616CE6B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="928" y="544" w="32" h="32" xo="384" yo="32" id="10003943" name="inst_27A9CC59" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="352" y="384" w="32" h="32" xo="384" yo="32" id="10003946" name="inst_9AEC9B53" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="896" y="576" w="32" h="32" xo="384" yo="32" id="10003948" name="inst_BD59FCFC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="736" y="512" w="32" h="32" xo="384" yo="32" id="10003954" name="inst_FDFB387B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="800" y="672" w="32" h="32" xo="384" yo="32" id="10003948" name="inst_BD59FCFC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="768" y="512" w="32" h="32" xo="384" yo="32" id="10003955" name="inst_43F6D09F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="576" y="0" w="32" h="32" xo="384" yo="32" id="10003964" name="inst_D8768D1B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="960" y="576" w="32" h="32" xo="384" yo="32" id="10003965" name="inst_2F78A27B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="704" y="448" w="32" h="32" xo="384" yo="32" id="10003966" name="inst_EFDA511C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="992" y="192" w="32" h="32" xo="384" yo="32" id="10003965" name="inst_2F78A27B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="672" y="448" w="32" h="32" xo="384" yo="32" id="10003966" name="inst_EFDA511C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="768" y="704" w="32" h="32" xo="384" yo="32" id="10003969" name="inst_4A83B475" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="704" y="96" w="32" h="32" xo="384" yo="32" id="10003971" name="inst_F628DD10" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="384" y="384" w="32" h="32" xo="384" yo="32" id="10003972" name="inst_30A245B0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="672" y="96" w="32" h="32" xo="384" yo="32" id="10003971" name="inst_F628DD10" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="384" y="352" w="32" h="32" xo="384" yo="32" id="10003972" name="inst_30A245B0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="0" y="320" w="32" h="32" xo="384" yo="32" id="10003973" name="inst_0F58F7CE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="928" y="384" w="32" h="32" xo="384" yo="32" id="10004638" name="inst_B537C831" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="928" y="352" w="32" h="32" xo="384" yo="32" id="10004639" name="inst_1EC9CD23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="928" y="416" w="32" h="32" xo="384" yo="32" id="10004641" name="inst_FB7833D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="928" y="448" w="32" h="32" xo="384" yo="32" id="10004645" name="inst_FA66D8E9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="928" y="480" w="32" h="32" xo="384" yo="32" id="10004647" name="inst_509BBCB5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="928" y="512" w="32" h="32" xo="384" yo="32" id="10004652" name="inst_05C624D9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="928" y="544" w="32" h="32" xo="384" yo="32" id="10004653" name="inst_E03F032F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="960" y="224" w="32" h="32" xo="384" yo="32" id="10004639" name="inst_1EC9CD23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="1024" y="416" w="32" h="32" xo="384" yo="32" id="10004641" name="inst_FB7833D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="992" y="448" w="32" h="32" xo="384" yo="32" id="10004645" name="inst_FA66D8E9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="992" y="480" w="32" h="32" xo="384" yo="32" id="10004647" name="inst_509BBCB5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="640" y="736" w="32" h="32" xo="384" yo="32" id="10004652" name="inst_05C624D9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="960" y="512" w="32" h="32" xo="384" yo="32" id="10004653" name="inst_E03F032F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="800" y="512" w="32" h="32" xo="384" yo="32" id="10004657" name="inst_EF476A6E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="832" y="480" w="32" h="32" xo="384" yo="32" id="10004658" name="inst_9A52E83F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="832" y="448" w="32" h="32" xo="384" yo="32" id="10004659" name="inst_9BF40F33" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="800" y="416" w="32" h="32" xo="384" yo="32" id="10004660" name="inst_8BD2D787" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="800" y="544" w="32" h="32" xo="384" yo="32" id="10004661" name="inst_00EF8519" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="768" y="544" w="32" h="32" xo="384" yo="32" id="10004662" name="inst_B5DE272B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="832" y="512" w="32" h="32" xo="384" yo="32" id="10004663" name="inst_CAF35A30" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="800" y="480" w="32" h="32" xo="384" yo="32" id="10004664" name="inst_6C94562B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="800" y="448" w="32" h="32" xo="384" yo="32" id="10004665" name="inst_E676D815" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="768" y="448" w="32" h="32" xo="384" yo="32" id="10004666" name="inst_73BE4BDA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="768" y="480" w="32" h="32" xo="384" yo="32" id="10004667" name="inst_614BF561" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="736" y="480" w="32" h="32" xo="384" yo="32" id="10004668" name="inst_A762A475" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="736" y="448" w="32" h="32" xo="384" yo="32" id="10004669" name="inst_0A6E7CC1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="800" y="384" w="32" h="32" xo="384" yo="32" id="10004670" name="inst_4817B66A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="768" y="384" w="32" h="32" xo="384" yo="32" id="10004671" name="inst_54C81AD3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="overworld01" x="832" y="416" w="32" h="32" xo="384" yo="32" id="10004672" name="inst_090A6D87" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="864" y="448" w="32" h="32" xo="384" yo="32" id="10004658" name="inst_9A52E83F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="896" y="384" w="32" h="32" xo="384" yo="32" id="10004659" name="inst_9BF40F33" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="672" y="384" w="32" h="32" xo="384" yo="32" id="10004660" name="inst_8BD2D787" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="928" y="576" w="32" h="32" xo="384" yo="32" id="10004662" name="inst_B5DE272B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="736" y="512" w="32" h="32" xo="384" yo="32" id="10004663" name="inst_CAF35A30" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="608" y="704" w="32" h="32" xo="384" yo="32" id="10004665" name="inst_E676D815" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="704" y="480" w="32" h="32" xo="384" yo="32" id="10004668" name="inst_A762A475" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="672" y="416" w="32" h="32" xo="384" yo="32" id="10004670" name="inst_4817B66A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="832" y="480" w="32" h="32" xo="384" yo="32" id="10004671" name="inst_54C81AD3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="overworld01" x="896" y="352" w="32" h="32" xo="384" yo="32" id="10004672" name="inst_090A6D87" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="224" y="480" w="32" h="32" xo="384" yo="32" id="10004681" name="inst_1FCE0F71" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="256" y="512" w="32" h="32" xo="384" yo="32" id="10004682" name="inst_52BF5E95" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="overworld01" x="224" y="512" w="32" h="32" xo="384" yo="32" id="10004683" name="inst_00308B31" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

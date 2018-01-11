@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="room_transitionSquare" x="816" y="512" name="inst_4EC6A0C0" locked="0" code="depth = -1000&#xA;transitionRoom = nexus;&#xA;startX = 48;&#xA;startY = 304;&#xA;&#xA;forceAngle = true;&#xA;angleToFace = 2;&#xA;&#xA;thisObjTransition = transitionType.Fade;&#xA;overlay_index = whitefill;&#xA;" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
-    <instance objName="room_transitionSquare" x="0" y="80" name="inst_51B9BF3C" locked="0" code="depth = -1000&#xA;transitionRoom = west2;&#xA;startX = 1136;&#xA;startY = 720;&#xA;&#xA;forceAngle = true;&#xA;angleToFace = 6;&#xA;&#xA;thisObjTransition = transitionType.Fade;&#xA;overlay_index = whitefill;" scaleX="0.5" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
+    <instance objName="room_transitionSquare" x="0" y="80" name="inst_51B9BF3C" locked="0" code="depth = -1000&#xA;transitionRoom = west2;&#xA;startX = 1136;&#xA;startY = 256;&#xA;&#xA;forceAngle = true;&#xA;angleToFace = 6;&#xA;&#xA;thisObjTransition = transitionType.Fade;&#xA;overlay_index = whitefill;&#xA;" scaleX="0.5" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="overworld01" x="528" y="640" w="32" h="32" xo="352" yo="96" id="10003432" name="inst_0FBA7688" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

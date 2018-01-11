@@ -281,7 +281,6 @@
       <object>objects\obj_camera</object>
     </objects>
     <objects name="devobj">
-      <object>objects\obj_first_particle</object>
       <object>objects\obj_colSquare</object>
       <object>objects\obj_colSlope</object>
       <object>objects\interactable</object>
@@ -315,6 +314,14 @@
     </rooms>
     <rooms name="east">
       <room>rooms\east1</room>
+      <room>rooms\east2</room>
+      <room>rooms\east3</room>
+      <room>rooms\east4</room>
+      <rooms name="southeast">
+        <room>rooms\seast1</room>
+        <room>rooms\seast2</room>
+        <room>rooms\seast3</room>
+      </rooms>
     </rooms>
   </rooms>
   <help>
