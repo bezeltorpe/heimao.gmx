@@ -157,7 +157,6 @@
         <sprite>sprites\spr_snowangel_LU1</sprite>
         <sprite>sprites\spr_snowangel_LU2</sprite>
       </sprites>
-      <sprite>sprites\spr_campfire</sprite>
     </sprites>
     <sprites name="devspr">
       <sprite>sprites\spr_colSquare</sprite>
@@ -177,6 +176,7 @@
     <sprites name="props">
       <sprite>sprites\spr_tinyshrine</sprite>
       <sprite>sprites\spr_log15</sprite>
+      <sprite>sprites\spr_campfire</sprite>
     </sprites>
     <sprites name="overlays">
       <sprite>sprites\whitefill</sprite>
@@ -291,12 +291,10 @@
       <object>objects\room_transitionSlope</object>
       <object>objects\room_transition</object>
     </objects>
-    <objects name="fx">
-      <object>objects\obj_campfire</object>
-    </objects>
     <objects name="props">
       <object>objects\obj_tinyshrine</object>
       <object>objects\obj_log15</object>
+      <object>objects\obj_campfire</object>
     </objects>
     <objects name="items">
       <object>objects\obj_item_tinybell</object>
