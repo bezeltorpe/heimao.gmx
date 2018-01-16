@@ -56,7 +56,7 @@ inventory = instance_create(0,0,heimao_inventory);
 (inventory).persistent = true;
 (inventory).depth = -1000;
 
-// BGM Sync Groups
+// BGM Sync Groups - TODO: DOES NOT FUNCTION PROPERLY, PLEASE REMOVE LATER
 global.bgmNexus = audio_create_sync_group(true);
 audio_play_in_sync_group(global.bgmNexus, mus_home_bass);
 audio_sound_gain(mus_home_bass, 1, 250);
@@ -67,6 +67,12 @@ audio_sound_gain(mus_home_melodyp2, 0, 0);
 
 // BGM initialization
 changeBGM = false;
+
+// Screen rendering variables
+global.gamePalette = spr_palette;
+global.screenScale = 2;                     //TODO: adjustable screenscale in options
+global.screenX = window_get_width();
+global.screenY = window_get_height();
 
 ///Variables for Movement
 mspd = 1.5;

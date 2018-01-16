@@ -163,6 +163,7 @@
       <sprite>sprites\spr_colSlope</sprite>
       <sprite>sprites\transitionRoom_square</sprite>
       <sprite>sprites\transitionRoom_slope</sprite>
+      <sprite>sprites\spr_palette</sprite>
     </sprites>
     <sprite>sprites\spr_snowball2</sprite>
     <sprite>sprites\spr_testrotate</sprite>
@@ -181,6 +182,7 @@
     <sprites name="overlays">
       <sprite>sprites\whitefill</sprite>
       <sprite>sprites\blackfill</sprite>
+      <sprite>sprites\spr_light</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -191,6 +193,7 @@
       <background>background\overworld01</background>
       <background>background\interior01</background>
     </backgrounds>
+    <background>background\bg_dither</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -267,6 +270,7 @@
       <script>scripts\base_interact.gml</script>
       <script>scripts\scr_test_rotating_interact.gml</script>
       <script>scripts\scr_test_inventory_interact.gml</script>
+      <script>scripts\scr_shaderDrawing.gml</script>
     </scripts>
     <scripts name="inventory">
       <script>scripts\scr_inventory_draw.gml</script>
@@ -275,6 +279,10 @@
       <script>scripts\scr_inventory_step.gml</script>
     </scripts>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\shd_dither.shader</shader>
+    <shader type="GLSLES">shaders\shd_gbpalette.shader</shader>
+  </shaders>
   <objects name="objects">
     <objects name="persistent">
       <object>objects\heimao_object</object>
@@ -290,6 +298,7 @@
       <object>objects\room_transitionSquare</object>
       <object>objects\room_transitionSlope</object>
       <object>objects\room_transition</object>
+      <object>objects\obj_shaderController</object>
     </objects>
     <objects name="props">
       <object>objects\obj_tinyshrine</object>
@@ -299,26 +308,38 @@
     <objects name="items">
       <object>objects\obj_item_tinybell</object>
     </objects>
+    <objects name="overlays">
+      <object>objects\obj_light</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\nexus</room>
     <rooms name="test">
       <room>rooms\testroom</room>
     </rooms>
-    <room>rooms\home_int</room>
-    <rooms name="west">
-      <room>rooms\west1</room>
-      <room>rooms\west2</room>
-    </rooms>
-    <rooms name="east">
-      <room>rooms\east1</room>
-      <room>rooms\east2</room>
-      <room>rooms\east3</room>
-      <room>rooms\east4</room>
-      <rooms name="southeast">
-        <room>rooms\seast1</room>
-        <room>rooms\seast2</room>
-        <room>rooms\seast3</room>
+    <rooms name="above">
+      <room>rooms\nexus</room>
+      <room>rooms\home_int</room>
+      <rooms name="west">
+        <room>rooms\west1</room>
+        <rooms name="southwest">
+          <room>rooms\swest1</room>
+          <room>rooms\swest2</room>
+          <room>rooms\swest3</room>
+        </rooms>
+        <room>rooms\west2</room>
+      </rooms>
+      <rooms name="east">
+        <room>rooms\east1</room>
+        <rooms name="southeast">
+          <room>rooms\seast1</room>
+          <room>rooms\seast2</room>
+          <room>rooms\seast3</room>
+        </rooms>
+        <room>rooms\east2</room>
+        <room>rooms\east3</room>
+        <room>rooms\east4</room>
+        <room>rooms\east5</room>
+        <room>rooms\east6</room>
       </rooms>
     </rooms>
   </rooms>
