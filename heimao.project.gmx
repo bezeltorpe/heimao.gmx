@@ -182,7 +182,8 @@
     <sprites name="overlays">
       <sprite>sprites\whitefill</sprite>
       <sprite>sprites\blackfill</sprite>
-      <sprite>sprites\spr_light</sprite>
+      <sprite>sprites\overlay_dark</sprite>
+      <sprite>sprites\overlay_lantern</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -307,9 +308,6 @@
     </objects>
     <objects name="items">
       <object>objects\obj_item_tinybell</object>
-    </objects>
-    <objects name="overlays">
-      <object>objects\obj_light</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -338,7 +338,7 @@
             <kind>1</kind>
             <string>if (drawCatShadow = true) {draw_sprite(spr_heimao_shadow, 0, x, y)};
 //draw_set_alpha(0.5);
-draw_ellipse_colour(bbox_left,bbox_top,bbox_right,bbox_bottom,c_red,c_red,false);
+//draw_ellipse_colour(bbox_left,bbox_top,bbox_right,bbox_bottom,c_red,c_red,false);
 //draw_set_alpha(1);
 draw_self();
 </string>
