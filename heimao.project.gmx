@@ -311,9 +311,6 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <rooms name="test">
-      <room>rooms\testroom</room>
-    </rooms>
     <rooms name="above">
       <room>rooms\nexus</room>
       <room>rooms\home_int</room>
@@ -339,6 +336,9 @@
         <room>rooms\east5</room>
         <room>rooms\east6</room>
       </rooms>
+    </rooms>
+    <rooms name="test">
+      <room>rooms\testroom</room>
     </rooms>
   </rooms>
   <help>
