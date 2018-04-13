@@ -19,14 +19,14 @@ if (v != 0){
        
         if (place_free(x + s, y + 1) && !place_free(x + s, y + 2) && down){
             x += s;
-            y += 1;
+            y += .5;
         }
         else if (place_free(x + s, y)) {
             x += s;
         }
         else if (place_free(x + s, y - 1)){
             x += s;
-            y -= 1;
+            y -= .5;
         }
         else{
             vx = 0;
@@ -47,14 +47,14 @@ if (v != 0){
         down = true;
        
         if (place_free(x + 1, y + s) && !place_free(x + s, y + 2) && down){
-            x += 1;
+            x += .5;
             y += s;
         }
         else if (place_free(x, y + s)) {
             y += s;
         }
         else if (place_free(x - 1, y + s)){
-            x -= 1;
+            x -= .5;
             y += s;
         }
         else{
