@@ -204,8 +204,6 @@
       <script>scripts\scr_init_game.gml</script>
     </scripts>
     <scripts name="heimao">
-      <script>scripts\scr_heimao_camera.gml</script>
-      <script>scripts\scr_heimao_action.gml</script>
       <scripts name="States">
         <scripts name="Running">
           <script>scripts\scr_heimao_running_draw.gml</script>
@@ -213,56 +211,70 @@
           <script>scripts\scr_heimao_running_act.gml</script>
         </scripts>
         <scripts name="Standing">
+          <script>scripts\scr_heimao_standing_act.gml</script>
           <script>scripts\scr_heimao_standing_draw.gml</script>
           <script>scripts\scr_heimao_standing_updateState.gml</script>
-          <script>scripts\scr_heimao_standing_act.gml</script>
         </scripts>
-        <scripts name="SittingDown">
-          <script>scripts\scr_heimao_sittingDown_draw.gml</script>
-          <script>scripts\scr_heimao_sittingDown_updateState.gml</script>
-          <script>scripts\scr_heimao_sittingDown_act.gml</script>
+        <scripts name="ItemStates">
+          <scripts name="Sitting">
+            <script>scripts\scr_heimao_sitting_draw.gml</script>
+            <script>scripts\scr_heimao_sitting_updateState.gml</script>
+            <script>scripts\scr_heimao_sitting_act.gml</script>
+          </scripts>
+          <scripts name="SittingDown">
+            <script>scripts\scr_heimao_sittingDown_draw.gml</script>
+            <script>scripts\scr_heimao_sittingDown_updateState.gml</script>
+            <script>scripts\scr_heimao_sittingDown_act.gml</script>
+          </scripts>
+          <scripts name="Laying">
+            <script>scripts\scr_heimao_laying_draw.gml</script>
+            <script>scripts\scr_heimao_laying_act.gml</script>
+            <script>scripts\scr_heimao_laying_updateState.gml</script>
+          </scripts>
+          <scripts name="LayingDown">
+            <script>scripts\scr_heimao_layingDown_updateState.gml</script>
+            <script>scripts\scr_heimao_layingDown_act.gml</script>
+            <script>scripts\scr_heimao_layingDown_draw.gml</script>
+          </scripts>
+          <scripts name="AngelUp">
+            <script>scripts\scr_heimao_angelUp_draw.gml</script>
+          </scripts>
+          <scripts name="StandingUp">
+            <script>scripts\scr_heimao_standingUp_updateState.gml</script>
+            <script>scripts\scr_heimao_standingUp_draw.gml</script>
+            <script>scripts\scr_heimao_standingUp_act.gml</script>
+          </scripts>
+          <scripts name="Laying2">
+            <script>scripts\scr_heimao_laying2_draw.gml</script>
+            <script>scripts\scr_heimao_laying2_updateState.gml</script>
+          </scripts>
+          <scripts name="AngelDown">
+            <script>scripts\scr_heimao_angelDown_draw.gml</script>
+          </scripts>
+          <scripts name="LayingUp">
+            <script>scripts\scr_heimao_layingUp_draw.gml</script>
+            <script>scripts\scr_heimao_layingUp_act.gml</script>
+            <script>scripts\scr_heimao_layingUp_updateState.gml</script>
+          </scripts>
         </scripts>
-        <scripts name="Sitting">
-          <script>scripts\scr_heimao_sitting_draw.gml</script>
-          <script>scripts\scr_heimao_sitting_updateState.gml</script>
-          <script>scripts\scr_heimao_sitting_act.gml</script>
+        <scripts name="EnterItemState">
+          <script>scripts\scr_heimao_enterItem_act.gml</script>
+          <script>scripts\scr_heimao_enterItem_draw.gml</script>
+          <script>scripts\scr_heimao_enterItem_updateState.gml</script>
         </scripts>
-        <scripts name="LayingDown">
-          <script>scripts\scr_heimao_layingDown_updateState.gml</script>
-          <script>scripts\scr_heimao_layingDown_act.gml</script>
-          <script>scripts\scr_heimao_layingDown_draw.gml</script>
+        <scripts name="ExitItemState">
+          <script>scripts\scr_heimao_exitItem_act.gml</script>
+          <script>scripts\scr_heimao_exitItem_draw.gml</script>
+          <script>scripts\scr_heimao_exitItem_updateState.gml</script>
         </scripts>
-        <scripts name="Laying">
-          <script>scripts\scr_heimao_laying_draw.gml</script>
-          <script>scripts\scr_heimao_laying_act.gml</script>
-          <script>scripts\scr_heimao_laying_updateState.gml</script>
-        </scripts>
-        <scripts name="Laying2">
-          <script>scripts\scr_heimao_laying2_draw.gml</script>
-          <script>scripts\scr_heimao_laying2_updateState.gml</script>
-        </scripts>
-        <scripts name="AngelUp">
-          <script>scripts\scr_heimao_angelUp_draw.gml</script>
-        </scripts>
-        <scripts name="AngelDown">
-          <script>scripts\scr_heimao_angelDown_draw.gml</script>
-        </scripts>
-        <scripts name="StandingUp">
-          <script>scripts\scr_heimao_standingUp_updateState.gml</script>
-          <script>scripts\scr_heimao_standingUp_draw.gml</script>
-          <script>scripts\scr_heimao_standingUp_act.gml</script>
-        </scripts>
-        <scripts name="LayingUp">
-          <script>scripts\scr_heimao_layingUp_draw.gml</script>
-          <script>scripts\scr_heimao_layingUp_act.gml</script>
-          <script>scripts\scr_heimao_layingUp_updateState.gml</script>
-        </scripts>
-        <script>scripts\scr_heimao_updateState.gml</script>
       </scripts>
       <scripts name="Main">
         <script>scripts\scr_heimao_init.gml</script>
         <script>scripts\scr_heimao_step.gml</script>
         <script>scripts\scr_heimao_draw.gml</script>
+        <script>scripts\scr_heimao_updateState.gml</script>
+        <script>scripts\scr_heimao_camera.gml</script>
+        <script>scripts\scr_heimao_action.gml</script>
       </scripts>
       <scripts name="Animation">
         <script>scripts\scr_heimao_animationEnd_footprint.gml</script>
@@ -298,20 +310,17 @@
     <objects name="persistent">
       <object>objects\heimao_object</object>
       <object>objects\obj_camera</object>
+      <object>objects\interactable</object>
     </objects>
     <objects name="devobj">
       <object>objects\obj_colSquare</object>
       <object>objects\obj_colSlope</object>
-      <object>objects\interactable</object>
       <object>objects\test_rotating</object>
       <object>objects\heimao_inventory</object>
-      <object>objects\test_inventory</object>
       <object>objects\room_transitionSquare</object>
       <object>objects\room_transitionSlope</object>
       <object>objects\room_transition</object>
       <object>objects\obj_shaderController</object>
-      <object>objects\obj_item_base</object>
-      <object>objects\obj_test_item</object>
     </objects>
     <objects name="props">
       <object>objects\obj_tinyshrine</object>
@@ -320,6 +329,8 @@
     </objects>
     <objects name="items">
       <object>objects\obj_item_tinybell</object>
+      <object>objects\obj_test_item</object>
+      <object>objects\obj_item_base</object>
     </objects>
   </objects>
   <rooms name="rooms">

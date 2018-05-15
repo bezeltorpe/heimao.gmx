@@ -63,7 +63,7 @@ if (drawFootprint == true)
         drawFootprint = false;
     }
 }
-
+/*
 if (drawSnowAngel == true)
 {
     switch (playerState)
@@ -107,4 +107,4 @@ if (drawSnowAngel == true)
         default: break;
     }
     drawSnowAngel = false;
-}
+}*/

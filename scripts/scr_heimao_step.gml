@@ -19,6 +19,8 @@ xDir = keyRight - keyLeft;
 yDir = keyDown - keyUp;
 timer += 1;
 
+//Old action control
+/*
 //laydown input logic
 sitPress = keyboard_check_pressed(ord('Q'));
 sitHeld = keyboard_check(ord('Q'));
@@ -33,12 +35,12 @@ if(sitPress)
 if(sitHeld) {sitTimer += 0.1;}
     
 if(sitTimer > 0.5 && sitResult == 1) {sitResult = 2;}
-    
+ 
 if(sitRelease)
 {
     sitResult = 0;
     sitTimer = 0;
-}
+}*/
 
 (inventory).active = keyInventory;
 

@@ -7,10 +7,13 @@ switch(playerState)
         drawFootprint = true;
         audio_play_sound(sfx_heimao_step, 5, false);
         break;
-
+}
+/*
     case State.SittingDown:
         playerState = State.Sitting;
         break;
+}
+
 
     case State.LayingDown:
         playerState = State.Laying;
@@ -36,3 +39,4 @@ switch(playerState)
         canMove = true;
         break;
 }
+*/

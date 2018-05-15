@@ -3,10 +3,20 @@ switch(playerState)
     case State.Standing:
         scr_heimao_standing_updateState();
         break;
-
+    
     case State.Running:
         scr_heimao_running_updateState();
         break;
+        
+    case State.EnterItemState:
+        scr_heimao_enterItem_updateState();
+        break;
+        
+    case State.ExitItemState:
+        scr_heimao_exitItem_updateState();
+        break;
+}
+/*
 
     case State.SittingDown:
         scr_heimao_sittingDown_updateState();
@@ -27,7 +37,7 @@ switch(playerState)
     case State.Laying2:
         scr_heimao_laying2_updateState();
         break;
-/*
+
     case State.AngelUp:
         scr_heimao_angelUp_updateState();
         break;
@@ -35,7 +45,7 @@ switch(playerState)
     case State.AngelDown:
         scr_heimao_angelDown_updateState();
         break;
-*/
+
     case State.LayingUp:
         scr_heimao_layingUp_updateState();
         break;
@@ -44,3 +54,4 @@ switch(playerState)
         scr_heimao_standingUp_updateState();
         break;
 }
+*/

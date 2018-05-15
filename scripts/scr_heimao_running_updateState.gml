@@ -19,6 +19,6 @@ if ((xDir == 0 && yDir == 0))
 // Check for sitdown
 if (sitResult == 1)
 {
-    playerState = State.SittingDown;
+    //playerState = State.SittingDown;
     canMove = false;
 }

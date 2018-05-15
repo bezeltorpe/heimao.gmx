@@ -12,6 +12,13 @@ if (active)
     // Because mod doesn't work with negatives
     selectX = (selectX + ELEM_PER_ROW) % ELEM_PER_ROW;
     selectY = (selectY  + ELEM_PER_COL)% ELEM_PER_COL;
+    
+    currentSelection = selectX * (y * ELEM_PER_ROW);
+    
+    if(keyAction)
+    {
+        currentlyEquipped = currentSelection;
+    }
 }
 else
 {

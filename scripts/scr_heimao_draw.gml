@@ -17,10 +17,20 @@ switch(playerState)
     case State.Standing:
         scr_heimao_standing_draw();
         break;
-
+    
     case State.Running:
         scr_heimao_running_draw();
         break;
+        
+    case State.EnterItemState:
+        scr_heimao_enterItem_draw();
+        break;
+        
+    case State.ExitItemState:
+        scr_heimao_exitItem_draw();
+        break;
+}
+/*
         
     case State.SittingDown:
         scr_heimao_sittingDown_draw();
