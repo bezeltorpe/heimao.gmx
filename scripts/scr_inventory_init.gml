@@ -15,3 +15,15 @@ for(var i = MAX_ITEM - 1; i >= 0 i--;)
     descriptions[i] = -1;
     useFunctions[i] = -1;
 }
+
+enum Items
+{
+    Mittens,
+    Shield,
+    NoteBottle,
+    Bottle,
+    Blanket,
+    Boots,
+    Lantern,
+    Meteorite
+}
