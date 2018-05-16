@@ -1,8 +1,9 @@
-/*currentItem = (inventory).currentlyEquipped.useFunction;
-var act = -1;
+currentItem = (inventory).currentlyEquipped.useFunction;
 switch(currentItem)
 {
     case Items.Mittens:
-    act = scr_heimao_sitting_act();
+    scr_heimao_sitting_act();
     break;
-}*/
+}
+
+

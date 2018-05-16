@@ -215,57 +215,64 @@
           <script>scripts\scr_heimao_standing_draw.gml</script>
           <script>scripts\scr_heimao_standing_updateState.gml</script>
         </scripts>
-        <scripts name="ItemStates">
-          <scripts name="Sitting">
-            <script>scripts\scr_heimao_sitting_draw.gml</script>
-            <script>scripts\scr_heimao_sitting_updateState.gml</script>
-            <script>scripts\scr_heimao_sitting_act.gml</script>
+        <scripts name="Items">
+          <scripts name="ItemStates">
+            <scripts name="Sitting">
+              <script>scripts\scr_heimao_sitting_draw.gml</script>
+              <script>scripts\scr_heimao_sitting_updateState.gml</script>
+              <script>scripts\scr_heimao_sitting_act.gml</script>
+            </scripts>
+            <scripts name="SittingDown">
+              <script>scripts\scr_heimao_sittingDown_draw.gml</script>
+              <script>scripts\scr_heimao_sittingDown_updateState.gml</script>
+              <script>scripts\scr_heimao_sittingDown_act.gml</script>
+            </scripts>
+            <scripts name="Laying">
+              <script>scripts\scr_heimao_laying_draw.gml</script>
+              <script>scripts\scr_heimao_laying_act.gml</script>
+              <script>scripts\scr_heimao_laying_updateState.gml</script>
+            </scripts>
+            <scripts name="LayingDown">
+              <script>scripts\scr_heimao_layingDown_updateState.gml</script>
+              <script>scripts\scr_heimao_layingDown_act.gml</script>
+              <script>scripts\scr_heimao_layingDown_draw.gml</script>
+            </scripts>
+            <scripts name="AngelUp">
+              <script>scripts\scr_heimao_angelUp_draw.gml</script>
+            </scripts>
+            <scripts name="StandingUp">
+              <script>scripts\scr_heimao_standingUp_updateState.gml</script>
+              <script>scripts\scr_heimao_standingUp_draw.gml</script>
+              <script>scripts\scr_heimao_standingUp_act.gml</script>
+            </scripts>
+            <scripts name="Laying2">
+              <script>scripts\scr_heimao_laying2_draw.gml</script>
+              <script>scripts\scr_heimao_laying2_updateState.gml</script>
+            </scripts>
+            <scripts name="AngelDown">
+              <script>scripts\scr_heimao_angelDown_draw.gml</script>
+            </scripts>
+            <scripts name="LayingUp">
+              <script>scripts\scr_heimao_layingUp_draw.gml</script>
+              <script>scripts\scr_heimao_layingUp_act.gml</script>
+              <script>scripts\scr_heimao_layingUp_updateState.gml</script>
+            </scripts>
           </scripts>
-          <scripts name="SittingDown">
-            <script>scripts\scr_heimao_sittingDown_draw.gml</script>
-            <script>scripts\scr_heimao_sittingDown_updateState.gml</script>
-            <script>scripts\scr_heimao_sittingDown_act.gml</script>
+          <scripts name="UpdateItemState">
+            <script>scripts\scr_heimao_updateItem_act.gml</script>
+            <script>scripts\scr_heimao_updateItem_draw.gml</script>
+            <script>scripts\scr_heimao_updateItem_updateState.gml</script>
           </scripts>
-          <scripts name="Laying">
-            <script>scripts\scr_heimao_laying_draw.gml</script>
-            <script>scripts\scr_heimao_laying_act.gml</script>
-            <script>scripts\scr_heimao_laying_updateState.gml</script>
+          <scripts name="ExitItemState">
+            <script>scripts\scr_heimao_exitItem_act.gml</script>
+            <script>scripts\scr_heimao_exitItem_draw.gml</script>
+            <script>scripts\scr_heimao_exitItem_updateState.gml</script>
           </scripts>
-          <scripts name="LayingDown">
-            <script>scripts\scr_heimao_layingDown_updateState.gml</script>
-            <script>scripts\scr_heimao_layingDown_act.gml</script>
-            <script>scripts\scr_heimao_layingDown_draw.gml</script>
+          <scripts name="EnterItemState">
+            <script>scripts\scr_heimao_enterItem_act.gml</script>
+            <script>scripts\scr_heimao_enterItem_draw.gml</script>
+            <script>scripts\scr_heimao_enterItem_updateState.gml</script>
           </scripts>
-          <scripts name="AngelUp">
-            <script>scripts\scr_heimao_angelUp_draw.gml</script>
-          </scripts>
-          <scripts name="StandingUp">
-            <script>scripts\scr_heimao_standingUp_updateState.gml</script>
-            <script>scripts\scr_heimao_standingUp_draw.gml</script>
-            <script>scripts\scr_heimao_standingUp_act.gml</script>
-          </scripts>
-          <scripts name="Laying2">
-            <script>scripts\scr_heimao_laying2_draw.gml</script>
-            <script>scripts\scr_heimao_laying2_updateState.gml</script>
-          </scripts>
-          <scripts name="AngelDown">
-            <script>scripts\scr_heimao_angelDown_draw.gml</script>
-          </scripts>
-          <scripts name="LayingUp">
-            <script>scripts\scr_heimao_layingUp_draw.gml</script>
-            <script>scripts\scr_heimao_layingUp_act.gml</script>
-            <script>scripts\scr_heimao_layingUp_updateState.gml</script>
-          </scripts>
-        </scripts>
-        <scripts name="EnterItemState">
-          <script>scripts\scr_heimao_enterItem_act.gml</script>
-          <script>scripts\scr_heimao_enterItem_draw.gml</script>
-          <script>scripts\scr_heimao_enterItem_updateState.gml</script>
-        </scripts>
-        <scripts name="ExitItemState">
-          <script>scripts\scr_heimao_exitItem_act.gml</script>
-          <script>scripts\scr_heimao_exitItem_draw.gml</script>
-          <script>scripts\scr_heimao_exitItem_updateState.gml</script>
         </scripts>
       </scripts>
       <scripts name="Main">

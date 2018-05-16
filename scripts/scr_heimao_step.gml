@@ -14,6 +14,7 @@ keyDown = keyboard_check(ord('S'));
 keyLeft = keyboard_check(ord('A'));
 keyRight = keyboard_check(ord('D'));
 keyAction = keyboard_check(ord('E'));
+keyActionHold = keyboard_check_pressed(ord('E'));
 keyInventory = keyInventory ^^ keyboard_check_pressed(ord('I'));
 xDir = keyRight - keyLeft;
 yDir = keyDown - keyUp;

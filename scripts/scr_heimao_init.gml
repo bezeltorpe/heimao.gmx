@@ -8,6 +8,7 @@ enum State
     Standing,           // 0
     Running,            // 3
     EnterItemState,
+    UpdateItemState,
     ExitItemState
 }
 /*
