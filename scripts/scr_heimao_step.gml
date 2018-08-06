@@ -13,14 +13,14 @@ keyUp = keyboard_check(ord('W'));
 keyDown = keyboard_check(ord('S'));
 keyLeft = keyboard_check(ord('A'));
 keyRight = keyboard_check(ord('D'));
-keyUseItem = keyboard_check(vk_space);
+keyUseItem = keyboard_check_pressed(vk_space);
 keyAction = keyboard_check(ord('E'));
 keyActionHold = keyboard_check_pressed(ord('E'));
 keyInventory = keyInventory ^^ keyboard_check_pressed(ord('I'));
 xDir = keyRight - keyLeft;
 yDir = keyDown - keyUp;
 timer += 1;
-
+currentItem = (inventory).useFunctions[(inventory).currentlyEquipped];
 //Old action control
 /*
 //laydown input logic

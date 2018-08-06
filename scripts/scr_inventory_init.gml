@@ -9,9 +9,14 @@ selectY = 0;
 currentSelection = 1
 currentItemCount = 0;
 
-currentlyEquipped = 1;
+currentlyEquipped = 0;
 
-for(var i = MAX_ITEM - 1; i >= 0 i--;)
+icons[0] = -1;
+name[0] = -1;
+descriptions[0] = -1;
+useFunctions[0] = Items.None;
+
+for(var i = 0; i > MAX_ITEM; i++;)
 {
     icons[i] = -1;
     names[i] = -1;

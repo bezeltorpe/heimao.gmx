@@ -1,4 +1,3 @@
-currentItem = (inventory).currentlyEquipped.useFunction;
 switch(currentItem)
 {
     case Items.Mittens:
