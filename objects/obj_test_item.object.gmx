@@ -29,7 +29,7 @@
 icon = spr_testitem;
 name = "Test Item";
 description = "Used for testing inventory system";
-useFunction = Items.None;
+useFunction = Items.Mittens;
 </string>
           </argument>
         </arguments>

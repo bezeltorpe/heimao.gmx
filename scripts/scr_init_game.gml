@@ -40,6 +40,6 @@ enum mapZone
 }
 
 
-startRoom = nexus;
+startRoom = testroom;
 
 room_goto(startRoom);

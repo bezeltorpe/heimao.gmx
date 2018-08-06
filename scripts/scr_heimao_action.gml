@@ -16,6 +16,7 @@ switch(playerState)
         scr_heimao_exitItem_act();
         break;
 }
+
 /*
     case State.SittingDown:
         scr_heimao_sittingDown_act();

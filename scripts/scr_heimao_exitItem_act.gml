@@ -5,3 +5,4 @@ switch(currentItem)
     scr_heimao_standingUp_act();
     break;
 }
+

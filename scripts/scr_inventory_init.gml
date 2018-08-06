@@ -9,7 +9,7 @@ selectY = 0;
 currentSelection = 1
 currentItemCount = 0;
 
-currentlyEquipped = -1;
+currentlyEquipped = 1;
 
 for(var i = MAX_ITEM - 1; i >= 0 i--;)
 {

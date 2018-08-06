@@ -5,3 +5,7 @@ switch(currentItem)
     scr_heimao_sittingDown_act();
     break;
 }
+if(keyUseItem)
+{
+    playerState = State.ExitItemState;
+}

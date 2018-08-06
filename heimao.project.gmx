@@ -276,12 +276,16 @@
         </scripts>
       </scripts>
       <scripts name="Main">
-        <script>scripts\scr_heimao_init.gml</script>
-        <script>scripts\scr_heimao_step.gml</script>
-        <script>scripts\scr_heimao_draw.gml</script>
-        <script>scripts\scr_heimao_updateState.gml</script>
         <script>scripts\scr_heimao_camera.gml</script>
-        <script>scripts\scr_heimao_action.gml</script>
+        <scripts name="Object">
+          <script>scripts\scr_heimao_init.gml</script>
+          <script>scripts\scr_heimao_step.gml</script>
+          <script>scripts\scr_heimao_draw.gml</script>
+        </scripts>
+        <scripts name="State">
+          <script>scripts\scr_heimao_action.gml</script>
+          <script>scripts\scr_heimao_updateState.gml</script>
+        </scripts>
       </scripts>
       <scripts name="Animation">
         <script>scripts\scr_heimao_animationEnd_footprint.gml</script>

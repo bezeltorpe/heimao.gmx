@@ -37,6 +37,7 @@ persistent = true;
 inventory = instance_create(0,0,heimao_inventory);
 (inventory).persistent = true;
 (inventory).depth = -1000;
+currentItem = -1;
 
 ///Variables for Movement
 mspd = 1.5;
