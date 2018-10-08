@@ -215,6 +215,9 @@
           <script>scripts\scr_heimao_action.gml</script>
           <script>scripts\scr_heimao_updateState.gml</script>
         </scripts>
+        <scripts name="Action">
+          <script>scripts\scr_heimao_onUseItem.gml</script>
+        </scripts>
       </scripts>
       <scripts name="States">
         <scripts name="Running">
@@ -229,7 +232,7 @@
         </scripts>
         <scripts name="Items">
           <scripts name="ItemStates">
-            <scripts name="Sitting">
+            <scripts name="Mittens">
               <script>scripts\scr_heimao_sitting_draw.gml</script>
               <script>scripts\scr_heimao_sitting_updateState.gml</script>
               <script>scripts\scr_heimao_sitting_act.gml</script>
@@ -268,7 +271,6 @@
             <script>scripts\scr_heimao_updateItem_act.gml</script>
             <script>scripts\scr_heimao_updateItem_draw.gml</script>
             <script>scripts\scr_heimao_updateItem_updateState.gml</script>
-            <script>scripts\scr_heimao_onUseItem.gml</script>
           </scripts>
         </scripts>
       </scripts>
