@@ -37,7 +37,7 @@ persistent = true;
 inventory = instance_create(0,0,heimao_inventory);
 (inventory).persistent = true;
 (inventory).depth = -1000;
-currentItem = -1;
+currentItem = Items.None;
 
 ///Variables for Movement
 mspd = 1.5;
@@ -57,10 +57,6 @@ timer = 0;
 xExcess = 0;
 yExcess = 0;
 
-sitTimer = 0;
-sitResult = 0;
-layRelease = false;
-
 whichFoot = true;
 drawFootprint = false;
 drawSnowAngel = false;
@@ -71,3 +67,18 @@ tinybell = false;
 
 // Dumb preinitialization that we have to do
 keyInventory = false;
+
+//Item specific
+enum SitState
+{
+    SittingDown,
+    Sitting,
+    StandingUp,
+    Standing,
+    None
+}
+sitState = SitState.Standing;
+sitTimer = 0;
+sitResult = 0;
+layRelease = false;
+

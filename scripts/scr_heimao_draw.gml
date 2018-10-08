@@ -22,15 +22,8 @@ switch(playerState)
         scr_heimao_running_draw();
         break;
         
-    case State.EnterItemState:
-        scr_heimao_enterItem_draw();
-        break;
-        
     case State.UpdateItemState:
         scr_heimao_updateItem_draw();
         break;
         
-    case State.ExitItemState:
-        scr_heimao_exitItem_draw();
-        break;
 }
